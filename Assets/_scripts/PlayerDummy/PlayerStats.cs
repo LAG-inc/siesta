@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[DisallowMultipleComponent]
 public class PlayerStats : MonoBehaviour
 {
     //Use getter y setter en lugar de props para que unicamente reste o sume de uno en uno
@@ -14,6 +15,7 @@ public class PlayerStats : MonoBehaviour
     private void Awake()
     {
         _currentLife = initialLife;
+        SI = SI == null ? this : SI;
     }
 
     /// <summary>

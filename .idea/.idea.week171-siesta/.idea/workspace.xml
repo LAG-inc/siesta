@@ -20,26 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14a4eaa5-138e-4e46-bf9d-091e93b3bf44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/ParallaxBackground.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene+.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene+.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummy-Rito.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummy-Rito/Background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummy-Rito/Background.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummy-Rito/spritesheet_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummy-Rito/spritesheet_t1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummy-Rito/winter-landscape-flat-design_23-2148341191.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Dummy-Rito/winter-landscape-flat-design_23-2148341191.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerAnimation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerAnimation.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerInput.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerStats.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerStats.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.week171-siesta/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.week171-siesta/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.week171-siesta/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.week171-siesta/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.week171-siesta/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.week171-siesta/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParallaxBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParallaxBackground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene+.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene+.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerStats.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +45,8 @@
         <option value="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerMove.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerStatas.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerStats.cs" />
-        <option value="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/ParallaxBackground.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerInput.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +96,8 @@
       <updated>1602884297613</updated>
       <workItem from="1602884302058" duration="28000" />
       <workItem from="1602884359081" duration="19000" />
-      <workItem from="1602894480802" duration="9919000" />
+      <workItem from="1602894480802" duration="10419000" />
+      <workItem from="1602948403038" duration="1550000" />
     </task>
     <servers />
   </component>
@@ -130,6 +116,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

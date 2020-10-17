@@ -1,6 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
+[DisallowMultipleComponent]
 public class ParallaxBackground : MonoBehaviour
 {
     [SerializeField, Range(0, 10)] private float initialBackgroundVelocity;

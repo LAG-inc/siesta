@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D)), DisallowMultipleComponent]
 public class PlayerInput : MonoBehaviour
 {
     private static PlayerInput SI;
@@ -10,7 +10,7 @@ public class PlayerInput : MonoBehaviour
 
     private float _direction;
 
-    [SerializeField, Tooltip("Angulo en hacia el cual se mueve"), Range(-360, 360)]
+    [SerializeField, Tooltip("Angulo hacia el cual se mueve"), Range(-360, 360)]
     private float cameraAngle = 90;
 
     [SerializeField, Range(0, 20)] private float velocity;
@@ -32,6 +32,7 @@ public class PlayerInput : MonoBehaviour
     private void Update()
     {
         _direction = Input.GetAxisRaw("Horizontal");
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -5.6f, 1.3f));
     }
 
     private void FixedUpdate()
