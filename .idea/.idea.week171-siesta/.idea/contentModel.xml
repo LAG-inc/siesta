@@ -7,16 +7,24 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="_scripts" t="Include">
-          <e p="LoadSceneGame.cs" t="Include" />
-          <e p="PlayerDummy" t="Include">
+          <e p="Effects" t="Include">
+            <e p="EffectBase.cs" t="Include" />
+            <e p="Fade.cs" t="Include" />
+            <e p="MixColor.cs" t="Include" />
+            <e p="ParallaxBackground.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="AnimationJumpController.cs" t="Include" />
             <e p="PlayerAnimation.cs" t="Include" />
             <e p="PlayerInput.cs" t="Include" />
             <e p="PlayerStats.cs" t="Include" />
           </e>
-          <e p="SoundTrigger.cs" t="Include" />
-          <e p="Util.cs" t="Include" />
+          <e p="Util" t="Include">
+            <e p="LoadSceneGame.cs" t="Include" />
+            <e p="SoundTrigger.cs" t="Include" />
+            <e p="Util.cs" t="Include" />
+          </e>
         </e>
-        <e p="ParallaxBackground.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
