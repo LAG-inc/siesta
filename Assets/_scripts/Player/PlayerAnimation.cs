@@ -1,6 +1,6 @@
 ﻿//Script encargado de mantener al player en su zona y darle animaciones
 
-using System;
+
 using UnityEngine;
 
 [DisallowMultipleComponent]
@@ -12,37 +12,43 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] private float offsetClamp;
 
     //Animaciones con animator
-    private Animator _animator;
+    private Animator _playerAnimator;
 
+
+    private Animator _shadowAnim;
+    private GameObject _shadow;
+
+    private static readonly int Jump = Animator.StringToHash("Jump");
 
     // A kind of singleton
     public static PlayerAnimation SI;
 
     private void Awake()
     {
+        _shadow = GameObject.Find("Shadow");
+        _shadowAnim = GameObject.Find("ShadowAnim").GetComponent<Animator>();
         SI = SI == null ? this : SI;
-        _animator = GetComponent<Animator>();
+        _playerAnimator = GetComponentInParent<Animator>();
+
         _ground = GameObject.FindGameObjectWithTag("GroundPlayable").GetComponent<BoxCollider2D>();
         _maxY = _ground.bounds.max.y - offsetClamp;
-
         _minY = _ground.bounds.min.y + offsetClamp;
     }
 
 
-    private void FixedUpdate()
-    {
-        //Para que sea mas entendible no lo metodo con operador ternario  --->  ? : ; 
-        if (Math.Abs(transform.position.y - _maxY) < Mathf.Epsilon ||
-            Math.Abs(transform.position.y - _minY) < Mathf.Epsilon)
-            transform.rotation = Quaternion.Euler(new Vector3(0, 180f, 30f));
-        else
-        {
-            transform.rotation = Quaternion.Euler(new Vector3(0, 180f, 30f + PlayerInput.SI.Direction * 30f));
-        }
-    }
-
     private void Update()
     {
+        if (PlayerInput.SI.SpaceKey)
+        {
+            _playerAnimator.SetTrigger(Jump);
+            _shadowAnim.SetTrigger(Jump);
+        }
+
+        _shadow.transform.position = new Vector3(_shadow.transform.position.x,
+            Mathf.Clamp(transform.position.y, _minY, _maxY),
+            _shadow.transform.position.z);
+
+
         transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, _minY, _maxY));
     }
 }

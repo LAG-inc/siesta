@@ -20,31 +20,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14a4eaa5-138e-4e46-bf9d-091e93b3bf44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SFX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EnhancesPlayer.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/EnhancesPlayer.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Effects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/EffectBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/EffectBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/Fade.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/Fade.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/MixColor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/MixColor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/ParallaxBackground.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/ParallaxBackground.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Player/AnimationJumpController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Player/AnimationJumpController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerAnimation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerInput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerStats.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerStats.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Util.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Util/LoadSceneGame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Util/LoadSceneGame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Util/SoundTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Util/SoundTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Util/Util.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Util/Util.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.week171-siesta/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.week171-siesta/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.week171-siesta/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.week171-siesta/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Controllers/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Controllers/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerJump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerJump.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParallaxBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/ParallaxBackground.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ParallaxBackground.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/ParallaxBackground.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestJump.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestJump.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/AnimationJumpController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/AnimationJumpController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnhancesPlayer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnhancesPlayer.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/AnimationJumpController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/AnimationJumpController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Effects/EffectBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/EffectBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Effects/MixColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/MixColor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/LoadSceneGame.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/LoadSceneGame.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/ParallaxBackground.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/ParallaxBackground.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerStats.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerStats.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/SoundTrigger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/SoundTrigger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Util.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Util.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +91,14 @@
         <option value="$PROJECT_DIR$/Assets/_scripts/Util.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/ParallaxBackground.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Effects/BassicEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/_scripts/Effects/MixColor.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Effects/Fade.cs" />
-        <option value="$PROJECT_DIR$/Assets/_scripts/Effects/EffectBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/AnimationJumpController.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/PlayerDummy/PlayerInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/_scripts/AnimationJumpController.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Player/PlayerAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Player/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Effects/MixColor.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Effects/EffectBase.cs" />
       </list>
     </option>
   </component>
@@ -130,7 +152,8 @@
       <workItem from="1602894480802" duration="10419000" />
       <workItem from="1602948403038" duration="11284000" />
       <workItem from="1602974143974" duration="773000" />
-      <workItem from="1602974990755" duration="14434000" />
+      <workItem from="1602974990755" duration="16905000" />
+      <workItem from="1603000542256" duration="647000" />
     </task>
     <servers />
   </component>
@@ -168,5 +191,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" width="672" height="677" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602983404578" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603000324087">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603000324087" />
   </component>
 </project>

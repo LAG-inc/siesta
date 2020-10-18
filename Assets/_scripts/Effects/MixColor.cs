@@ -23,7 +23,7 @@ public class MixColor : EffectBase
 
         foreach (var sprite in sprites)
         {
-            sprite.color = _currentColor;
+            sprite.color = new Color(_currentColor.r, _currentColor.g, _currentColor.b, sprite.color.a);
         }
     }
 }

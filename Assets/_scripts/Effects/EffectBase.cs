@@ -3,10 +3,10 @@
 
 public abstract class EffectBase : MonoBehaviour
 {
+    [SerializeField, Tooltip("Desactivar y activar tras modificar en juego"), Range(0, 2)]
+    private float timeBetweenEffect;
     [SerializeField] protected SpriteRenderer[] sprites;
 
-    [Header("Not Modifiable In Game"), SerializeField, Tooltip("Reiniciar para modificar"), Range(0, 2)]
-    protected float timeBetweenEffect;
 
 
     protected virtual void Effect()
