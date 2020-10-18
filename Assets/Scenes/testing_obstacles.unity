@@ -2281,6 +2281,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2749415763051247847, guid: 3812219de3dd80645a90d75c232f5b0e,
+        type: 3}
+      propertyPath: maxObstacles
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3812219de3dd80645a90d75c232f5b0e, type: 3}
 --- !u!1001 &2775863718983178675
@@ -2349,6 +2354,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775863719453353026, guid: 363865485cdaa614486950b7f8f487ec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 363865485cdaa614486950b7f8f487ec, type: 3}
@@ -2487,6 +2497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087852484175560749, guid: 9c72a2b91c347864294b71fce037dc01,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c72a2b91c347864294b71fce037dc01, type: 3}

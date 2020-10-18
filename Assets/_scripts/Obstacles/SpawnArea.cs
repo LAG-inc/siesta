@@ -18,14 +18,22 @@ public class SpawnArea : MonoBehaviour
     {
         for (int i = 0; i < maxObstacles; i++)
         {
-            GameObject newObstacle = Instantiate(obstacleBase);
-            newObstacle.SetActive(false);
-            _queue.Enqueue(newObstacle);
+            AddNewObstacle();
         }
+    }
+
+    void AddNewObstacle()
+    {
+        GameObject newObstacle = Instantiate(obstacleBase);
+        newObstacle.SetActive(false);
+        _queue.Enqueue(newObstacle);
     }
 
     void SpawnFromQueue(SpawnPoint spawnPoint)
     {
+        // En caso de no tener ningún objeto que sacar de la Queue, se instancia uno nuevo.
+        if (_queue.Count == 0)
+            AddNewObstacle();
         GameObject obstacle = _queue.Dequeue();
         obstacle.transform.SetParent(spawnPoint.transform);
         obstacle.transform.position = spawnPoint.transform.position;
