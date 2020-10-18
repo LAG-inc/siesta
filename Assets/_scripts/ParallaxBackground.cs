@@ -22,13 +22,9 @@ public class ParallaxBackground : MonoBehaviour
         _initialPosition = transform.position;
     }
 
-    private void Start()
-    {
-        Debug.Log(_sizeX);
-    }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.Translate(_currentBackgroundVelocity * Time.deltaTime, 0, 0);
         _currentBackgroundVelocity += Time.deltaTime / delayGrowSpeed;
