@@ -1,4 +1,4 @@
-ï»¿//Script encargado de mantener al player en su zona y darle animaciones
+//Script encargado de mantener al player en su zona y darle animaciones
 
 
 using UnityEngine;
@@ -17,6 +17,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private Animator _shadowAnim;
     private GameObject _shadow;
+    private GameObject _playerContainer;
 
     private static readonly int Jump = Animator.StringToHash("Jump");
 
@@ -27,12 +28,17 @@ public class PlayerAnimation : MonoBehaviour
     {
         _shadow = GameObject.Find("Shadow");
         _shadowAnim = GameObject.Find("ShadowAnim").GetComponent<Animator>();
+        _playerContainer = GameObject.Find("PlayerContainer");
         SI = SI == null ? this : SI;
         _playerAnimator = GetComponentInParent<Animator>();
 
         _ground = GameObject.FindGameObjectWithTag("GroundPlayable").GetComponent<BoxCollider2D>();
-        _maxY = _ground.bounds.max.y - offsetClamp;
-        _minY = _ground.bounds.min.y + offsetClamp;
+        _maxY = _ground.bounds.max.y - _playerContainer.transform.position.y - offsetClamp ;
+
+        //.65f es lo que "mide" el sprite del borde superior al inferior en movimiento vertical,
+        //intente hacerlo con el bound del collider pero no funcionó
+        _minY = _ground.bounds.min.y - _playerContainer.transform.position.y + offsetClamp + .65f ;
+
     }
 
 
@@ -44,11 +50,22 @@ public class PlayerAnimation : MonoBehaviour
             _shadowAnim.SetTrigger(Jump);
         }
 
-        _shadow.transform.position = new Vector3(_shadow.transform.position.x,
-            Mathf.Clamp(transform.position.y, _minY, _maxY),
-            _shadow.transform.position.z);
+        transform.localPosition = new Vector3(transform.localPosition.x, 
+                    Mathf.Clamp(transform.localPosition.y, _minY, _maxY));
 
-
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, _minY, _maxY));
+        if (PlayerInput.SI.IsJumping)
+        {
+            //Distancia entre posicion global y posicion local
+            float dis = -6.8f;
+            _shadow.transform.position = new Vector3(_shadow.transform.position.x,
+                                                    transform.localPosition.y + dis,
+                                                    _shadow.transform.position.z);
+        }
+        else
+        {
+            _shadow.transform.position = new Vector3(_shadow.transform.position.x,
+                                                    transform.position.y,
+                                                    _shadow.transform.position.z);
+        }
     }
 }

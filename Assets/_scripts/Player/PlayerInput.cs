@@ -55,7 +55,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -5.6f, 1.3f));
+        //transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -5.6f, 1.3f));
         switch (currentControl)
         {
             case Controll.Horizontal:
