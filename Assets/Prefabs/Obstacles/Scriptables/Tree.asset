@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69667cdc81c5fda40bd6629729c4ce49, type: 3}
-  m_Name: Rock
+  m_Name: Tree
   m_EditorClassIdentifier: 
-  obstacleName: Rock
-  velocity: 5
+  obstacleName: Tree
   color:
     serializedVersion: 2
-    rgba: 4280695920
+    rgba: 4280664159

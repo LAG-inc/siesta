@@ -7,6 +7,7 @@ TagManager:
   - GroundPlayable
   - Obstacle
   - SpawnPoint
+  - Pattern
   layers:
   - Default
   - TransparentFX
