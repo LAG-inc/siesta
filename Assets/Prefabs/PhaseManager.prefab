@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8468531065557214472}
   - component: {fileID: 8468531065557214475}
   - component: {fileID: 8468531065557214473}
+  - component: {fileID: 3632625378576732152}
   m_Layer: 0
   m_Name: PhaseManager
   m_TagString: Untagged
@@ -61,3 +62,32 @@ MonoBehaviour:
   HowToUseThis: "Phases: contiene la lista de las fases, el valor de cada elemento
     representa el n\xFAmero de patrones que tendr\xE1 dicha fase.\n\nInitial Time
     Between: tiempo entre cada una de las fases."
+--- !u!114 &3632625378576732152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8468531065557214478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 28a0d769912ac4d46b89f7e213a14f8d, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8468531065557214475}
+          m_MethodName: Pause
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
