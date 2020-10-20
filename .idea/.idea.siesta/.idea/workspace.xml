@@ -20,31 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ccc7746-a459-45b8-9473-5aa82605e541" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Scriptables.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Scriptables/Rock.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Scriptables/Rock.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Scriptables/Tree.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Scriptables/Tree.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PatternsTest.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PatternsTest/Pattern.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PatternsTest/Pattern.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/ResetPoint.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/ResetPoint.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SpawnManager.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SpawnManager.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/SpawnManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Util/DrawLimits.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Util/DrawLimits.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Util/HowToUse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Util/HowToUse.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Rock.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Rock.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/SpawnerArea.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/SpawnerArea.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Tree.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Tree.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Phase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Phase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Obstacles/SpawnPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/SpawnPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Alien.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/AlienBehavior.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/AlienBehavior.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Projectile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Projectile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerContainer.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AlienBehavior.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AlienBehavior.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Particle System.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Particle System.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Projectile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Projectile.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerContainer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Alien.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EnhancesPlayer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EnhancesPlayer.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/spawn_system.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/spawn_system.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Dummy-Rito/spritesheet_t1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Dummy-Rito/spritesheet_t1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Obstacles/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerAnimation.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +54,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/33/a35fa940/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/Obstacles/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -66,7 +66,10 @@
         <option value="$PROJECT_DIR$/Assets/HowToUse.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Util/HowToUse.cs" />
         <option value="$PROJECT_DIR$/Assets/DrawLimits.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/AlienBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AlienBehavior.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Projectile.cs" />
       </list>
     </option>
   </component>
@@ -83,7 +86,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -116,6 +119,7 @@
       <updated>1603060024015</updated>
       <workItem from="1603060026133" duration="3765000" />
       <workItem from="1603065591705" duration="19173000" />
+      <workItem from="1603146758830" duration="15079000" />
     </task>
     <servers />
   </component>
@@ -145,21 +149,21 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="714" y="242" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1603062324673" />
-    <state x="461" y="184" key="SettingsEditor" timestamp="1603074401001">
+    <state x="461" y="184" key="SettingsEditor" timestamp="1603161593096">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="184" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1603074401001" />
+    <state x="461" y="184" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1603161593096" />
     <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1603068578653">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1603068578653" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1603081332397">
+    <state x="616" y="250" key="run.anything.popup" timestamp="1603156456883">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603081332397" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603076002654">
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603156456883" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603157740921">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603076002654" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603157740921" />
   </component>
 </project>

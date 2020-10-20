@@ -69,9 +69,6 @@ public class SpawnManager : MonoBehaviour
             if (currentPat.transform.GetChild(i).gameObject.layer == LayerMask.NameToLayer("SpawnPoint"))
                 _childToRun++;
         }
-
-        Debug.Log(currentPat.transform.childCount);
-        Debug.Log(_childToRun);
     }
 
 
