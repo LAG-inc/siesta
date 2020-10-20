@@ -36,7 +36,7 @@ public class PlayerAnimation : MonoBehaviour
         _maxY = _ground.bounds.max.y - _playerContainer.transform.position.y - offsetClamp ;
 
         //.65f es lo que "mide" el sprite del borde superior al inferior en movimiento vertical,
-        //intente hacerlo con el bound del collider pero no funcionó
+        //intente hacerlo con el bound del collider pero no funcionÃ³
         _minY = _ground.bounds.min.y - _playerContainer.transform.position.y + offsetClamp + .65f ;
 
     }
