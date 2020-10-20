@@ -598,10 +598,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6788512052659059839}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cba562163f8f144f9a5291bdeba1a5a, type: 3}
+  m_Script: {fileID: 11500000, guid: 714636eecf843c04cbb9414d005a4806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 4
+  velocity: 1
   resetPoint: {fileID: 0}
 --- !u!114 &2362654663759862249
 MonoBehaviour:
