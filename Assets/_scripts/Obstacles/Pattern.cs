@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class Phase : MonoBehaviour
+public class Pattern : MonoBehaviour
 {
     [SerializeField] private float velocity = 1.0f;
     [SerializeField] private Transform resetPoint;
@@ -16,7 +16,7 @@ public class Phase : MonoBehaviour
         transform.Translate(velocity * Time.deltaTime, 0, 0);
         if (transform.position.x > resetPoint.position.x)
         {
-            SpawnManager.SI.ResetPatternValues(gameObject);
+            PatternManager.SI.ResetPatternValues(gameObject);
         }
     }
 }

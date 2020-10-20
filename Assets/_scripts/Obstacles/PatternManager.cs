@@ -3,9 +3,12 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 [DisallowMultipleComponent, DefaultExecutionOrder(100)]
-public class SpawnManager : MonoBehaviour
+public class PatternManager : MonoBehaviour
 {
-    public static SpawnManager SI;
+    public static PatternManager SI;
+    [Tooltip("Número de patrones restantes de la phase")]
+    public int remainingPattern;
+    public bool finished = false;
     private List<GameObject> _patterns = new List<GameObject>();
     private List<GameObject> _patternsRunning = new List<GameObject>();
 
@@ -47,11 +50,16 @@ public class SpawnManager : MonoBehaviour
     private void Update()
     {
         if (!_canRun) return;
+        if (remainingPattern <= 0)
+        {
+            finished = true;
+            return;
+        };
         _timeBetweenPattern -= Time.deltaTime;
-        if (_timeBetweenPattern <= 0) InitParent();
+        if (_timeBetweenPattern <= 0) InitPattern();
     }
 
-    private void InitParent()
+    private void InitPattern()
     {
         ResetSpawnValues();
 
@@ -69,6 +77,8 @@ public class SpawnManager : MonoBehaviour
             if (currentPat.transform.GetChild(i).gameObject.layer == LayerMask.NameToLayer("SpawnPoint"))
                 _childToRun++;
         }
+        remainingPattern--;
+        Debug.Log("Patron: " + remainingPattern);
     }
 
 
