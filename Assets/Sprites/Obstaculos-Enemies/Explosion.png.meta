@@ -1,0 +1,557 @@
+fileFormatVersion: 2
+guid: 46cb21d57e190a945a657e356a6fb6ee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8536567528350186423
+    second: "spritesheet explosi\xF3n 30fps_0"
+  - first:
+      213: 670938224469933518
+    second: "spritesheet explosi\xF3n 30fps_1"
+  - first:
+      213: -2946261079926361364
+    second: "spritesheet explosi\xF3n 30fps_2"
+  - first:
+      213: 218415925749147602
+    second: "spritesheet explosi\xF3n 30fps_3"
+  - first:
+      213: 348645034280560427
+    second: "spritesheet explosi\xF3n 30fps_4"
+  - first:
+      213: 101500454113098554
+    second: "spritesheet explosi\xF3n 30fps_5"
+  - first:
+      213: -2214708019210743672
+    second: "spritesheet explosi\xF3n 30fps_6"
+  - first:
+      213: -1746989689550348073
+    second: "spritesheet explosi\xF3n 30fps_7"
+  - first:
+      213: -90156672055694134
+    second: "spritesheet explosi\xF3n 30fps_8"
+  - first:
+      213: -272826473423715928
+    second: "spritesheet explosi\xF3n 30fps_9"
+  - first:
+      213: -8437206003693480759
+    second: "spritesheet explosi\xF3n 30fps_10"
+  - first:
+      213: -2845034357754785259
+    second: "spritesheet explosi\xF3n 30fps_11"
+  - first:
+      213: 462365591657933819
+    second: "spritesheet explosi\xF3n 30fps_12"
+  - first:
+      213: -6276657443574455890
+    second: "spritesheet explosi\xF3n 30fps_13"
+  - first:
+      213: -7970512342843228946
+    second: "spritesheet explosi\xF3n 30fps_14"
+  - first:
+      213: 2839525677553235599
+    second: "spritesheet explosi\xF3n 30fps_15"
+  - first:
+      213: 3478227918348979157
+    second: "spritesheet explosi\xF3n 30fps_16"
+  - first:
+      213: 9051421566735225839
+    second: "spritesheet explosi\xF3n 30fps_17"
+  - first:
+      213: 815506623952847868
+    second: "spritesheet explosi\xF3n 30fps_18"
+  - first:
+      213: 220965511728048503
+    second: "spritesheet explosi\xF3n 30fps_19"
+  - first:
+      213: -6765964064738643513
+    second: "spritesheet explosi\xF3n 30fps_20"
+  - first:
+      213: 7601175435583288860
+    second: "spritesheet explosi\xF3n 30fps_21"
+  - first:
+      213: 4060629034383697254
+    second: "spritesheet explosi\xF3n 30fps_22"
+  - first:
+      213: -6837133687128853852
+    second: "spritesheet explosi\xF3n 30fps_23"
+  - first:
+      213: 1997488774788014199
+    second: "spritesheet explosi\xF3n 30fps_24"
+  - first:
+      213: -5605845771947547693
+    second: "spritesheet explosi\xF3n 30fps_25"
+  - first:
+      213: 3061483657380324136
+    second: "spritesheet explosi\xF3n 30fps_26"
+  - first:
+      213: 4384070044383543640
+    second: "spritesheet explosi\xF3n 30fps_27"
+  - first:
+      213: -2856488773684714048
+    second: "spritesheet explosi\xF3n 30fps_28"
+  - first:
+      213: 8317026532510654679
+    second: "spritesheet explosi\xF3n 30fps_29"
+  - first:
+      213: 6846713388056213960
+    second: "spritesheet explosi\xF3n 30fps_30"
+  - first:
+      213: -3496012599867407756
+    second: "spritesheet explosi\xF3n 30fps_31"
+  - first:
+      213: 5553374825651788931
+    second: "spritesheet explosi\xF3n 30fps_32"
+  - first:
+      213: 688863504341255459
+    second: "spritesheet explosi\xF3n 30fps_33"
+  - first:
+      213: -4302176966863097516
+    second: "spritesheet explosi\xF3n 30fps_34"
+  - first:
+      213: -6458610685245356537
+    second: "spritesheet explosi\xF3n 30fps_35"
+  - first:
+      213: 2819149480660826695
+    second: "spritesheet explosi\xF3n 30fps_36"
+  - first:
+      213: 3779325846352294312
+    second: "spritesheet explosi\xF3n 30fps_37"
+  - first:
+      213: -2242455503409272906
+    second: "spritesheet explosi\xF3n 30fps_38"
+  - first:
+      213: 3299975602790963806
+    second: "spritesheet explosi\xF3n 30fps_39"
+  - first:
+      213: 1446379347750360279
+    second: "spritesheet explosi\xF3n 30fps_40"
+  - first:
+      213: 5063277981361611485
+    second: "spritesheet explosi\xF3n 30fps_41"
+  - first:
+      213: 3367118474333965571
+    second: "spritesheet explosi\xF3n 30fps_42"
+  - first:
+      213: 6610282514624852650
+    second: "spritesheet explosi\xF3n 30fps_43"
+  - first:
+      213: -8492458836574527754
+    second: "spritesheet explosi\xF3n 30fps_44"
+  - first:
+      213: -6800222693398337992
+    second: "spritesheet explosi\xF3n 30fps_45"
+  - first:
+      213: 446018496163095000
+    second: "spritesheet explosi\xF3n 30fps_46"
+  - first:
+      213: -302007044073787445
+    second: "spritesheet explosi\xF3n 30fps_47"
+  - first:
+      213: 6373762854165695535
+    second: "spritesheet explosi\xF3n 30fps_48"
+  - first:
+      213: 3980998597525302279
+    second: "spritesheet explosi\xF3n 30fps_49"
+  - first:
+      213: -2918196120331741547
+    second: "spritesheet explosi\xF3n 30fps_50"
+  - first:
+      213: -6024846534986112687
+    second: "spritesheet explosi\xF3n 30fps_51"
+  - first:
+      213: 2832809702523514470
+    second: "spritesheet explosi\xF3n 30fps_52"
+  - first:
+      213: 7649061068140659605
+    second: "spritesheet explosi\xF3n 30fps_53"
+  - first:
+      213: 5986030973748356752
+    second: Explosion_0
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "spritesheet explosi\xF3n 30fps_5"
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 2732
+        width: 126
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bb3ff002a986100800000000000000
+      internalID: 101500454113098554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "spritesheet explosi\xF3n 30fps_6"
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2224
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8801cb16ac6c341e0800000000000000
+      internalID: -2214708019210743672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "spritesheet explosi\xF3n 30fps_7"
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 2217
+        width: 184
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0e410222271c7e0800000000000000
+      internalID: -1746989689550348073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "spritesheet explosi\xF3n 30fps_8"
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 2229
+        width: 191
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc2df30cf2bfbef0800000000000000
+      internalID: -90156672055694134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "spritesheet explosi\xF3n 30fps_9"
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 2249
+        width: 219
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1c14694c9b63cf0800000000000000
+      internalID: -272826473423715928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "spritesheet explosi\xF3n 30fps_10"
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 2249
+        width: 235
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c49e0587d509ea80800000000000000
+      internalID: -8437206003693480759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "spritesheet explosi\xF3n 30fps_11"
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 2249
+        width: 234
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5129e3443586488d0800000000000000
+      internalID: -2845034357754785259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "spritesheet explosi\xF3n 30fps_12"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1725
+        width: 222
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb622f4e07aa6600800000000000000
+      internalID: 462365591657933819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "spritesheet explosi\xF3n 30fps_18"
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1724
+        width: 190
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf300b824f2415b00800000000000000
+      internalID: 815506623952847868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "spritesheet explosi\xF3n 30fps_19"
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 1740
+        width: 173
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779a92256f6011300800000000000000
+      internalID: 220965511728048503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "spritesheet explosi\xF3n 30fps_20"
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 1743
+        width: 148
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1f13ed7877a12a0800000000000000
+      internalID: -6765964064738643513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_0
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1156
+        width: 218
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096a1cc8477a21350800000000000000
+      internalID: 5986030973748356752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
