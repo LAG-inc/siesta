@@ -68,4 +68,8 @@ public class PlayerAnimation : MonoBehaviour
                                                     _shadow.transform.position.z);
         }
     }
+    
+    
+    
+    
 }
