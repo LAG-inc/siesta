@@ -49,8 +49,16 @@ public class SpawnArea : MonoBehaviour
 
     void SetObstacleValues(GameObject obstacle, ScriptableObstacle obstacleValues)
     {
-        SpriteRenderer spRenderer =obstacle.GetComponent<SpriteRenderer>();
-        spRenderer.color = obstacleValues.color;
+        SpriteRenderer spRenderer = obstacle.GetComponent<SpriteRenderer>();
+        BoxCollider2D collider = obstacle.GetComponent<BoxCollider2D>();
+        spRenderer.sprite = obstacleValues.sprite;
+        spRenderer.flipX = obstacleValues.flipX;
+        collider.size = new Vector2(obstacleValues.colliderY, obstacleValues.colliderX);
+        obstacle.transform.rotation = Quaternion.Euler(
+            obstacleValues.rotation.x,
+            obstacleValues.rotation.y,
+            obstacleValues.rotation.z
+        );
     }
 
     void OnTriggerEnter2D(Collider2D other)
