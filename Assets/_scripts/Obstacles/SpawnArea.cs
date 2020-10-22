@@ -53,7 +53,7 @@ public class SpawnArea : MonoBehaviour
         BoxCollider2D collider = obstacle.GetComponent<BoxCollider2D>();
         spRenderer.sprite = obstacleValues.sprite;
         spRenderer.flipX = obstacleValues.flipX;
-        collider.size = new Vector2(obstacleValues.colliderY, obstacleValues.colliderX);
+        collider.size = new Vector2(obstacleValues.colliderX, obstacleValues.colliderY);
         obstacle.transform.rotation = Quaternion.Euler(
             obstacleValues.rotation.x,
             obstacleValues.rotation.y,
