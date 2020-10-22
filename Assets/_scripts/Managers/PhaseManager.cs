@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+
 
 public class PhaseManager : MonoBehaviour
 {
     public static PhaseManager SI;
 
-    [Tooltip("Lista de fases, el valor representa el número de patrones de cada fase")]
     public float initialTimeBetweenPhase;
 
+    [Tooltip("Lista de fases, el valor representa el número de patrones de cada fase")]
     public List<int> phases;
 
     private float _timeBetweenPhase;
-    private int _remainingPhase;
+    public int RemainingPhases { private set; get; }
     private int _currentPhase = 0;
     private bool _pause = false;
     private PatternManager _patternManager;
@@ -21,27 +21,42 @@ public class PhaseManager : MonoBehaviour
     void Awake()
     {
         SI = SI == null ? this : SI;
-        _remainingPhase = phases.Count;
+        RemainingPhases = phases.Count;
         _patternManager = FindObjectOfType<PatternManager>();
+    }
+
+    private void Start()
+    {
+        PhaseConfigurator.SI.SetPhaseConfig();
     }
 
     void Update()
     {
-        if (_remainingPhase <= 0 || _pause) return;
+        if (RemainingPhases <= 0 || _pause) return;
         _timeBetweenPhase -= Time.deltaTime;
-        if (_timeBetweenPhase <= 0 && _patternManager.finished) InitPhase();
+        if (_timeBetweenPhase <= 0 && _patternManager.finished)
+        {
+            InitPhase();
+            PhaseConfigurator.SI.SetPhaseConfig();
+        }
     }
-    
+
     void InitPhase()
     {
         Debug.Log("Phase: " + _currentPhase);
         _patternManager.remainingPattern = phases[_currentPhase++];
         _patternManager.finished = false;
-        _remainingPhase--;
+        RemainingPhases--;
     }
 
     public void Pause(bool pause)
     {
         _pause = pause;
+    }
+
+
+    public int GetCurrentPhase()
+    {
+        return _currentPhase;
     }
 }

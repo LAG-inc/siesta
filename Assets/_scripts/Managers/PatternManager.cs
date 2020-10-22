@@ -85,6 +85,7 @@ public class PatternManager : MonoBehaviour
                 ChildToRun++;
         }
 
+        PhaseConfigurator.SI.MeteoriteAttack();
         remainingPattern--;
         Debug.Log("Patron: " + remainingPattern);
     }

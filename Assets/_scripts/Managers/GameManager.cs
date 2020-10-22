@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager SI;
     public GameState currentGameState = GameState.MainMenu;
-
+    
     private void Awake()
     {
         SI = SI == null ? this : SI;
