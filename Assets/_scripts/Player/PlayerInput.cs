@@ -1,6 +1,7 @@
 ﻿/*Script encargado de recibir inputs, realizar las acciones basicas como movimiento y salto
 ademas de definir booleanos para pasarselos al script de animaciones */
 
+using System;
 using UnityEngine;
 
 
@@ -55,7 +56,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        //transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -5.6f, 1.3f));
+        if (GameManager.SI.currentGameState != GameState.InGame) return;
         switch (currentControl)
         {
             case Controll.Horizontal:
@@ -67,6 +68,27 @@ public class PlayerInput : MonoBehaviour
         }
 
         //ReadInputs
+        ReadInput();
+        _collider.enabled = !IsJumping;
+    }
+
+    private void FixedUpdate()
+    {
+        if (GameManager.SI.currentGameState != GameState.InGame) return;
+        MovePlayer();
+    }
+
+
+    private void MovePlayer()
+    {
+        _playerRb.velocity = IsMoving
+            ? new Vector2(Util.GetVectorFromAngle(cameraAngle).x * velocity * _direction,
+                Util.GetVectorFromAngle(cameraAngle).y * velocity * _direction)
+            : Vector2.zero;
+    }
+
+    private void ReadInput()
+    {
         SpaceKey = Input.GetKeyDown(KeyCode.Space) && !IsJumping;
         if (Input.GetAxisRaw(_axisControl) != 0)
         {
@@ -79,16 +101,5 @@ public class PlayerInput : MonoBehaviour
             if (!slipMode)
                 _direction = 0;
         }
-
-        _collider.enabled = !IsJumping;
-    }
-
-    private void FixedUpdate()
-    {
-        IsMoving = _direction != 0;
-        _playerRb.velocity = IsMoving
-            ? new Vector2(Util.GetVectorFromAngle(cameraAngle).x * velocity * _direction,
-                Util.GetVectorFromAngle(cameraAngle).y * velocity * _direction)
-            : Vector2.zero;
     }
 }

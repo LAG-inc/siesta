@@ -45,15 +45,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 1339157011
-    locked: 0
-  - name: Obstacles
-    uniqueID: 3490713059
+  - name: Background2
+    uniqueID: 3748797641
     locked: 0
   - name: Background1
     uniqueID: 2937677357
     locked: 0
-  - name: Background2
-    uniqueID: 3748797641
+  - name: Obstacles
+    uniqueID: 3490713059
+    locked: 0
+  - name: Player
+    uniqueID: 1339157011
     locked: 0

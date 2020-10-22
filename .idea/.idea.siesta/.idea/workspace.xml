@@ -20,128 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ccc7746-a459-45b8-9473-5aa82605e541" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/Alien.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/Alien.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/AlienMovement.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/AlienMovement.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/Attack.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/Attack/Explosion.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/Attack/Explosion.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/Attack/Explosion.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/Attack/Explosion.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/Attack/PointToggle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/Attack/PointToggle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/Attack/PointToggle.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Alien/Attack/PointToggle.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/AttemptsAnimation.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/AttemptsAnimation.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/BlackTransitionIN.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/BlackTransitionIN.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/BlackTransitionOUT.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/BlackTransitionOUT.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/GameOverIN.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/GameOverIN.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/LifesAnimation.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/LifesAnimation.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/MainMenuTransition.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/MainMenuTransition.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/WinIN.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/GUI/WinIN.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Meteorite.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Meteorite/Meteorite.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Meteorite/Meteorite.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Meteorite/Meteorite.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Meteorite/Meteorite.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Meteorite/Temp.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Meteorite/Temp.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/Die.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/Die.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerJump.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerJump.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerMove.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerMove.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerShadowJump.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerShadowJump.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerShadowMove.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerShadowMove.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/Background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/Background.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/Explosion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/Explosion.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/Meteorite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/Meteorite.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/cono.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/cono.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/moai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/moai.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/roca.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/roca.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/spritesheet ovni 30fps 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/spritesheet ovni 30fps 1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/tronco.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Obstaculos-Enemies/tronco.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/UI_sprites.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/UI_sprites.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/player.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Managers/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Managers/GameManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Managers/PatternManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Managers/PatternManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Managers/PhaseManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Managers/PhaseManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AnimatorExplosionEnd.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AttackPoint.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AttackPoint.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Meteorite.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Meteorite.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Tracks/MixInGame.mixer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Tracks/MixInGame.mixer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/managers-conections.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/Dummy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/Dummy.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/foreground.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/ground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/ground.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/almohada azul.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/almohada azul.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/almohada lila rosa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/almohada lila rosa.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/almohada roja.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/almohada roja.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/almohada verde.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/almohada verde.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AttemptsAnimation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AttemptsAnimation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/BlackTransitionIN.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/BlackTransitionIN.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/BlackTransitionOUT.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/BlackTransitionOUT.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Controllers/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Controllers/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Controllers/PlayerShadow.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Controllers/PlayerShadow.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/GameOverIN.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/GameOverIN.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/LifesAnimation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/LifesAnimation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MainMenuTransition.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/MainMenuTransition.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerJump.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerJump.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerMove.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerMove.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerShadowJump.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerShadowJump.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerShadowMove.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerShadowMove.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/WinIN.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/WinIN.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/SFX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/managers-conections.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerContainer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerContainer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AlienBehavior.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AlienBehavior.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Dummy-Rito/Background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Dummy-Rito/Background.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AlienBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AlienBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Particle System.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Particle System.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Projectile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Projectile.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Obstacles/PatternManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Obstacles/PatternManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PhaseManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PhaseManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Background/Background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Background/Background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Background/Background.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Background/Background.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Effects/ParallaxBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/ParallaxBackground.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Player/PlayerStats.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
@@ -157,6 +62,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65CAB14A-C59E-4552-B77F-98A4AED18F9E/45/fdf9f49b/BoxCollider2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/e7/b0c818a0/UnityAction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/1b/58c49dbb/WaitForEndOfFrame.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AnimatorExplosionEnd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/33/a35fa940/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/049BE2AF-E36F-487E-B06E-F49D51A0BAB6/86/d43670d9/StateMachineBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -177,11 +83,15 @@
         <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AttackPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AlienBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/ExplosionEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/_scripts/Player/PlayerAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AnimatorExplosionEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Meteorite.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Effects/ParallaxBackground.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Pattern.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Managers/PhaseManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Player/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Player/PlayerAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Player/PlayerStats.cs" />
       </list>
     </option>
@@ -234,6 +144,8 @@
       <workItem from="1603065591705" duration="19173000" />
       <workItem from="1603146758830" duration="15079000" />
       <workItem from="1603266159572" duration="3690000" />
+      <workItem from="1603309038919" duration="9761000" />
+      <workItem from="1603325907068" duration="965000" />
     </task>
     <servers />
   </component>
@@ -263,10 +175,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="714" y="242" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1603248020163" />
-    <state x="461" y="184" key="SettingsEditor" timestamp="1603258697117">
+    <state x="461" y="184" key="SettingsEditor" timestamp="1603326317967">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="184" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1603258697117" />
+    <state x="461" y="184" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1603326317967" />
+    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog" timestamp="1603325894014">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1603325894014" />
     <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1603247830541">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -279,9 +195,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603262058796" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603247772974">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603325955797">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603247772974" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603325955797" />
   </component>
 </project>
