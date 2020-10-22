@@ -16,12 +16,14 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         SI = SI == null ? this : SI;
+        ChangeGameState(GameState.MainMenu);
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            ChangeGameState(GameState.MainMenu);
             UIManager.SI.ShowPauseMenu();
             PhaseManager.SI.Pause(true);
         }
@@ -29,15 +31,16 @@ public class GameManager : MonoBehaviour
 
     public void ChangeGameState(GameState newGameState)
     {
-
         if (newGameState == GameState.InGame)
         {
             //TODO
         }
+
         if (newGameState == GameState.GameOver)
         {
             UIManager.SI.PlayTimeLineGameOver();
         }
+
         if (newGameState == GameState.Win)
         {
             UIManager.SI.PlayTimeLineWin();

@@ -11,8 +11,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField, Range(0.5f, 3f)] private float immuneTime;
     private float _currentInmTime;
     private int _currentLife;
-    private int _currentCollectable;
-    public UnityEvent onHitObstacle;
+    public UnityEvent onDie;
 
     //Llamar en otras clases sin referenciar
     public static PlayerStats SI;
@@ -35,46 +34,37 @@ public class PlayerStats : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// Resta o suma la vida del player
-    /// </summary>
-    /// <param name="lostLife">True si resta vida, false si suma</param>
-    private void ChangeLife(bool lostLife)
-    {
-        _currentLife = lostLife ? _currentLife-- : _currentLife++;
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Obstacle") && !other.CompareTag("Meteorite")) return;
+
         if (_currentInmTime < immuneTime) return;
 
-        if(other.CompareTag("Obstacle")) SFXManager.SI.PlaySound(Sound.choqueObjeto);
-        if(other.CompareTag("Meteorite")) SFXManager.SI.PlaySound(Sound.meteorito);
+        if (other.CompareTag("Obstacle")) SFXManager.SI.PlaySound(Sound.ObjectHit);
+
+        _currentLife--;
+
 
         _currentInmTime = 0;
 
-        
-
         Debug.Log("Hit");
-
-        ChangeLife(true);
 
 
         if (_currentLife > 0) PlayerAnimation.SI.ToggleColorInvoke(immuneTime);
+
         else Die();
-
-
     }
 
 
     private void Die()
     {
-        GameManager.SI.currentGameState = GameState.GameOver;
+        onDie.Invoke();
+        GameManager.SI.ChangeGameState(GameState.GameOver);
     }
 
-    public void respawn()
+    public void Respawn()
     {
         _currentLife = initialLife;
+        PlayerAnimation.SI.RestartValues();
     }
 }
