@@ -15,6 +15,6 @@ MonoBehaviour:
   obstacleName: Tree
   sprite: {fileID: 21300000, guid: 0d6a6cafffb08dc42bb2b39bb30073e1, type: 3}
   flipX: 0
-  colliderX: 1.2
-  colliderY: 2.3
+  colliderX: 2.2
+  colliderY: 1.1
   rotation: {x: 0, y: 0, z: 90, w: 0}
