@@ -3,14 +3,14 @@
 public enum Sound
 {
     deslizar,
-    salto,
-    choqueObjeto,
-    checkpoint,
-    meteorito,
-    caer,
-    ovniLlegada,
-    ovniSalida,
-    ovniDetenido
+    Jump,
+    ObjectHit,
+    Checkpoint,
+    Meteorite,
+    Fall,
+    AlienComming,
+    AlienExit,
+    AlienStay
 }
 
 public class SFXManager : MonoBehaviour
@@ -32,28 +32,28 @@ public class SFXManager : MonoBehaviour
             case Sound.deslizar:
                 if(!deslizar.isPlaying) deslizar.PlayOneShot(deslizar.clip);
                 break;
-            case Sound.salto:
+            case Sound.Jump:
                 salto.PlayOneShot(salto.clip);
                 break;
-            case Sound.choqueObjeto:
+            case Sound.ObjectHit:
                 choqueObjeto.PlayOneShot(choqueObjeto.clip);
                 break;
-            case Sound.ovniLlegada:
+            case Sound.AlienComming:
                 ovniLlegada.PlayOneShot(ovniLlegada.clip);
                 break;
-            case Sound.checkpoint:
+            case Sound.Checkpoint:
                 checkpoint.PlayOneShot(checkpoint.clip);
                 break;
-            case Sound.meteorito:
+            case Sound.Meteorite:
                 if (!meteorito.isPlaying) meteorito.PlayOneShot(meteorito.clip);
                 break;
-            case Sound.caer:
+            case Sound.Fall:
                 caer.PlayOneShot(caer.clip);
                 break;
-            case Sound.ovniSalida:
+            case Sound.AlienExit:
                 ovniSalida.PlayOneShot(ovniSalida.clip);
                 break;
-            case Sound.ovniDetenido:
+            case Sound.AlienStay:
                 ovniDetenido.PlayOneShot(ovniDetenido.clip);
                 break;
         }

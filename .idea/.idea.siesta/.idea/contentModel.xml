@@ -34,6 +34,7 @@
               <e p="AlienBehavior.cs" t="Include" />
               <e p="AnimatorExplosionEnd.cs" t="Include" />
               <e p="AttackPoint.cs" t="Include" />
+              <e p="EnemiesController.cs" t="Include" />
               <e p="Meteorite.cs" t="Include" />
             </e>
             <e p="Pattern.cs" t="Include" />
@@ -54,6 +55,9 @@
             <e p="SoundTrigger.cs" t="Include" />
             <e p="Util.cs" t="Include" />
           </e>
+        </e>
+        <e p="Sprites" t="Include">
+          <e p="LifeCounterHUD.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
