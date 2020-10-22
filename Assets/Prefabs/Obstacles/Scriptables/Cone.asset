@@ -15,6 +15,6 @@ MonoBehaviour:
   obstacleName: Cone
   sprite: {fileID: 21300000, guid: c4ea62a16df2fb245934bbe860da1d6c, type: 3}
   flipX: 0
-  colliderX: 0.7
-  colliderY: 0.95
+  colliderX: 0.6
+  colliderY: 0.85
   rotation: {x: 0, y: 0, z: -25, w: 0}
