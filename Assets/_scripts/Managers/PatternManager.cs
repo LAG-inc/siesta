@@ -16,8 +16,8 @@ public class PatternManager : MonoBehaviour
 
 
     private bool _canRun;
-    private int _childCount;
-    private int _childToRun;
+    public int ChildCount { private set; get; }
+    public int ChildToRun { private set; get; }
 
 
     private float _timeBetweenPattern;
@@ -78,11 +78,11 @@ public class PatternManager : MonoBehaviour
 
         currentPat.SetActive(true);
 
-        _childToRun = 0;
+        ChildToRun = 0;
         for (var i = 0; i < currentPat.transform.childCount; i++)
         {
             if (currentPat.transform.GetChild(i).gameObject.layer == LayerMask.NameToLayer("SpawnPoint"))
-                _childToRun++;
+                ChildToRun++;
         }
 
         remainingPattern--;
@@ -92,7 +92,7 @@ public class PatternManager : MonoBehaviour
 
     private void ResetSpawnValues()
     {
-        _childCount = 0;
+        ChildCount = 0;
         _canRun = false;
         _timeBetweenPattern = initialTimeBetweenPattern;
     }
@@ -119,7 +119,7 @@ public class PatternManager : MonoBehaviour
         if (other.gameObject.layer != LayerMask.NameToLayer("SpawnPoint")) return;
         if (!other.gameObject.GetComponent<SpawnPoint>().canSumSpawn) return;
         other.gameObject.GetComponent<SpawnPoint>().canSumSpawn = false;
-        _childCount++;
-        _canRun = _childCount >= _childToRun;
+        ChildCount++;
+        _canRun = ChildCount >= ChildToRun;
     }
 }

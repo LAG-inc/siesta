@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour
         {
             ChangeGameState(GameState.MainMenu);
             UIManager.SI.ShowPauseMenu();
-            PhaseManager.SI.Pause(true);
         }
     }
 

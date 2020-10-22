@@ -34,7 +34,6 @@
               <e p="AlienBehavior.cs" t="Include" />
               <e p="AnimatorExplosionEnd.cs" t="Include" />
               <e p="AttackPoint.cs" t="Include" />
-              <e p="EnemiesController.cs" t="Include" />
               <e p="Meteorite.cs" t="Include" />
             </e>
             <e p="Pattern.cs" t="Include" />
@@ -42,6 +41,8 @@
             <e p="SpawnArea.cs" t="Include" />
             <e p="SpawnPoint.cs" t="Include" />
           </e>
+          <e p="PhaseConfig.cs" t="Include" />
+          <e p="PhaseConfigurator.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="AnimationJumpController.cs" t="Include" />
             <e p="PlayerAnimation.cs" t="Include" />

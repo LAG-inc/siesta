@@ -3,20 +3,27 @@ using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class EnemiesController : MonoBehaviour
+public class PhaseConfigurator : MonoBehaviour
 {
     private List<GameObject> _aliens = new List<GameObject>();
     private List<GameObject> _meteorites = new List<GameObject>();
-    public static EnemiesController SI;
+    public static PhaseConfigurator SI;
+
+    public PhaseConfig[] phaseConfig;
+    private PhaseConfig _currentConfig;
+
+    private GameObject _alien;
+    private GameObject[] _meteorite;
 
 
     private void Awake()
     {
         SI = SI == null ? this : SI;
-        foreach (var Alien in FindObjectsOfType<AlienBehavior>())
+
+        foreach (var alien in FindObjectsOfType<AlienBehavior>())
         {
-            _aliens.Add(Alien.gameObject);
-            Alien.gameObject.SetActive(false);
+            _aliens.Add(alien.gameObject);
+            alien.gameObject.SetActive(false);
         }
 
         foreach (var meteorite in FindObjectsOfType<Meteorite>())
@@ -44,5 +51,27 @@ public class EnemiesController : MonoBehaviour
         {
             alien.GetComponent<AlienBehavior>().RestartValues();
         }
+    }
+
+
+    private void SetPhaseConfig()
+    {
+    }
+
+
+    private void SetPatternVelocity()
+    {
+    }
+
+    private void SetAlienBehavior()
+    {
+    }
+
+    private void SetMetBehavior()
+    {
+    }
+
+    private void SetBackgroundBehavior()
+    {
     }
 }

@@ -1,6 +1,13 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+
+public enum AlienType
+{
+    Pattern,
+    Constant
+}
+
 public class AlienBehavior : MonoBehaviour
 {
     [Header("Behavior vars")] [SerializeField, Range(0, 10)]
@@ -24,6 +31,9 @@ public class AlienBehavior : MonoBehaviour
     private Vector3 _destiny;
     private Vector3 _initialPosition;
     private SpriteRenderer _sprite;
+
+
+    public AlienType currentType;
 
     private void Awake()
     {
@@ -74,18 +84,20 @@ public class AlienBehavior : MonoBehaviour
                 _sprite.flipX = transform.position.x < _destiny.x;
 
                 yield return new WaitForFixedUpdate();
-                yield return new WaitUntil(() =>
-                    GameManager.SI.currentGameState != GameState.MainMenu);
+                yield return new WaitUntil(() => GameManager.SI.currentGameState != GameState.MainMenu);
             }
 
             _sprite.flipX = transform.position.x < PlayerInput.SI.gameObject.transform.position.x;
 
             _cExplosion = StartCoroutine(AttackExplosion());
+
             SFXManager.SI.PlaySound(Sound.AlienStay);
+
             yield return new WaitUntil(() => _cExplosion == null);
         }
 
         RestartValues();
+
         SFXManager.SI.PlaySound(Sound.AlienExit);
     }
 
@@ -94,8 +106,10 @@ public class AlienBehavior : MonoBehaviour
     {
         attackPoint.gameObject.SetActive(true);
         attackPoint.gameObject.transform.position = PlayerInput.SI.gameObject.transform.position;
-        _currentShoots++;
+        _currentShoots = currentType == AlienType.Pattern ? _currentShoots + 1 : _currentShoots;
+
         var currentExplosionTime = 0f;
+
         while (currentExplosionTime < explosionTime)
         {
             currentExplosionTime += Time.deltaTime;

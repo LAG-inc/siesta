@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PhaseManager : MonoBehaviour
 {
+    public static PhaseManager SI;
+
     [Tooltip("Lista de fases, el valor representa el número de patrones de cada fase")]
     public float initialTimeBetweenPhase;
 
@@ -14,12 +16,11 @@ public class PhaseManager : MonoBehaviour
     private int _currentPhase = 0;
     private bool _pause = false;
     private PatternManager _patternManager;
-    public static PhaseManager SI;
+
 
     void Awake()
     {
         SI = SI == null ? this : SI;
-
         _remainingPhase = phases.Count;
         _patternManager = FindObjectOfType<PatternManager>();
     }
@@ -30,7 +31,7 @@ public class PhaseManager : MonoBehaviour
         _timeBetweenPhase -= Time.deltaTime;
         if (_timeBetweenPhase <= 0 && _patternManager.finished) InitPhase();
     }
-
+    
     void InitPhase()
     {
         Debug.Log("Phase: " + _currentPhase);

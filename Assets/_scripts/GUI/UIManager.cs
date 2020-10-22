@@ -126,8 +126,9 @@ public class UIManager : MonoBehaviour
         _gameOverIN.Play();
     }
 
-    public void PlayTimeLineAttemps()
+    public void PlayTimeLineAttemps(int number)
     {
+        RefreshAttempts(number);
         if (_attemptsIN.state != PlayState.Playing) _attemptsIN.Play();
     }
 }
