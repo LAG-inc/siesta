@@ -31,7 +31,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField, Range(0, 20)] private float velocity;
     private Rigidbody2D _playerRb;
 
-    private BoxCollider2D _collider;
+    private Collider2D _collider;
 
     //Tipo de control
     [Header("Control")] [SerializeField] private Controll currentControl;
@@ -44,7 +44,7 @@ public class PlayerInput : MonoBehaviour
     private void Awake()
     {
         SI = SI == null ? this : SI;
-        _collider = GetComponent<BoxCollider2D>();
+        _collider = GetComponentInChildren<Collider2D>();
         _playerRb = GetComponent<Rigidbody2D>();
     }
 
@@ -56,7 +56,24 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
+        IsMoving = false;
         if (GameManager.SI.currentGameState != GameState.InGame) return;
+
+        SwitchControl();
+
+        ReadInput();
+
+        _collider.enabled = !IsJumping;
+    }
+
+
+    private void FixedUpdate()
+    {
+        MovePlayer();
+    }
+
+    private void SwitchControl()
+    {
         switch (currentControl)
         {
             case Controll.Horizontal:
@@ -66,16 +83,6 @@ public class PlayerInput : MonoBehaviour
                 _axisControl = AxisVertical;
                 break;
         }
-
-        //ReadInputs
-        ReadInput();
-        _collider.enabled = !IsJumping;
-    }
-
-    private void FixedUpdate()
-    {
-        if (GameManager.SI.currentGameState != GameState.InGame) return;
-        MovePlayer();
     }
 
 

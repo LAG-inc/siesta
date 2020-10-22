@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 38e6f040dbee3524b8a252c320732652
+guid: 411ded52d29c5714f958cd4a3d806c8f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6648563553284190602
-    second: spritesheet_t1_0
+      213: 8082018007074934593
+    second: meteorito spritesheet 30fps_0
+  - first:
+      213: 4195203527068570628
+    second: meteorito spritesheet 30fps_1
+  - first:
+      213: 517003025408209699
+    second: meteorito spritesheet 30fps_2
+  - first:
+      213: -1234837801308847074
+    second: meteorito spritesheet 30fps_3
+  - first:
+      213: 1938098643577125895
+    second: meteorito spritesheet 30fps_4
+  - first:
+      213: 1423468600591829564
+    second: meteorito spritesheet 30fps_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -48,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_t1_0
+      name: meteorito spritesheet 30fps_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 226
-        height: 190
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +155,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a81fc1c7351744c50800000000000000
-      internalID: 6648563553284190602
+      spriteID: 14f030c9e88192070800000000000000
+      internalID: 8082018007074934593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteorito spritesheet 30fps_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4045367716b583a30800000000000000
+      internalID: 4195203527068570628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteorito spritesheet 30fps_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323324d2383cc2700800000000000000
+      internalID: 517003025408209699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteorito spritesheet 30fps_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1403c9ef89fcdee0800000000000000
+      internalID: -1234837801308847074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteorito spritesheet 30fps_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70cb416a27285ea10800000000000000
+      internalID: 1938098643577125895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteorito spritesheet 30fps_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ac23f762d21c310800000000000000
+      internalID: 1423468600591829564
       vertices: []
       indices: 
       edges: []

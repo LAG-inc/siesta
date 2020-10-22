@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -16,37 +17,29 @@ public class UIManager : MonoBehaviour
 
     #region inGame
 
-    [SerializeField]
-    private List<Image> _lifesImages;
+    [SerializeField] private List<Image> _lifesImages;
 
-    [SerializeField]
-    private Text _countDownText;
+    [SerializeField] private Text _countDownText;
 
-    [SerializeField]
-    private GameObject _countDownContainer;
+    [SerializeField] private GameObject _countDownContainer;
 
-    [SerializeField]
-    private Text _attemptsText;
+    [SerializeField] private Text _attemptsText;
 
-    [SerializeField]
-    private PlayableDirector _gameOverIN;
+    [SerializeField] private PlayableDirector _gameOverIN;
 
-    [SerializeField]
-    private PlayableDirector _win;
+    [SerializeField] private PlayableDirector _win;
 
-    [SerializeField]    
-    private PlayableDirector _attemptsIN;
+    [SerializeField] private PlayableDirector _attemptsIN;
 
     //Contenedor de la UI en el juego      
-    [SerializeField]
-    private GameObject _hud;
+    [SerializeField] private GameObject _hud;
+
     #endregion
 
     #region inPause
 
     //Menus
-    [SerializeField]
-    private GameObject pauseMenu;
+    [SerializeField] private GameObject pauseMenu;
 
     #endregion
 
@@ -70,7 +63,6 @@ public class UIManager : MonoBehaviour
         _countDownContainer.SetActive(true);
 
         StartCoroutine(PlayCountDown(start));
-
     }
 
     private void HideCountDown()
@@ -80,17 +72,15 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator PlayCountDown(int start)
     {
-
         for (int i = start; i > 0; i--)
         {
-
             _countDownText.text = i.ToString();
 
             yield return new WaitForSeconds(1f);
         }
 
         HideCountDown();
-
+        GameManager.SI.ChangeGameState(GameState.InGame);
         PhaseManager.SI.Pause(false);
     }
 
@@ -116,6 +106,16 @@ public class UIManager : MonoBehaviour
         GameManager.SI.ChangeGameState(GameState.InGame);
     }
 
+    public void InitGameDelayed(float time)
+    {
+        while (time > 0)
+        {
+            time -= Time.deltaTime;
+        }
+
+        GameManager.SI.ChangeGameState(GameState.InGame);
+    }
+
     public void PlayTimeLineWin()
     {
         _win.Play();
@@ -130,6 +130,4 @@ public class UIManager : MonoBehaviour
     {
         if (_attemptsIN.state != PlayState.Playing) _attemptsIN.Play();
     }
-    
-
 }

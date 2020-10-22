@@ -15,7 +15,7 @@ public class AnimationJumpController : StateMachineBehaviour
         i++;
         if(i == 60)
         {
-            SFXManager.SI.PlaySound(Sound.caer);
+            SFXManager.SI.PlaySound(Sound.Fall);
         }
     }
 

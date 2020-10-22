@@ -6,12 +6,13 @@ public class PhaseManager : MonoBehaviour
 {
     [Tooltip("Lista de fases, el valor representa el número de patrones de cada fase")]
     public float initialTimeBetweenPhase;
+
     public List<int> phases;
 
     private float _timeBetweenPhase;
     private int _remainingPhase;
     private int _currentPhase = 0;
-    private  bool _pause = false;
+    private bool _pause = false;
     private PatternManager _patternManager;
     public static PhaseManager SI;
 
@@ -20,7 +21,7 @@ public class PhaseManager : MonoBehaviour
         SI = SI == null ? this : SI;
 
         _remainingPhase = phases.Count;
-        _patternManager = GameObject.FindObjectOfType<PatternManager>();
+        _patternManager = FindObjectOfType<PatternManager>();
     }
 
     void Update()

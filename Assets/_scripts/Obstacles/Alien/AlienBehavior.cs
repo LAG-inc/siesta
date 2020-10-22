@@ -36,11 +36,13 @@ public class AlienBehavior : MonoBehaviour
 
     private void Start()
     {
-        SFXManager.SI.PlaySound(Sound.ovniLlegada);
+        SFXManager.SI.PlaySound(Sound.AlienComming);
     }
 
     private void FixedUpdate()
     {
+        if (GameManager.SI.currentGameState == GameState.MainMenu) return;
+
         if (_cPatrol == null)
         {
             transform.position = Vector3.MoveTowards(transform.position, _destiny, velocity * Time.fixedDeltaTime);
@@ -50,8 +52,9 @@ public class AlienBehavior : MonoBehaviour
             gameObject.SetActive(false);
     }
 
-    private void RestartValues()
+    public void RestartValues()
     {
+        _cPatrol = null;
         _destiny = _initialPosition + new Vector3(0, 10f);
         _currentShoots = 0;
     }
@@ -67,24 +70,23 @@ public class AlienBehavior : MonoBehaviour
             {
                 transform.position = Vector3.MoveTowards(transform.position, _destiny,
                     velocity * Time.fixedDeltaTime);
+
                 _sprite.flipX = transform.position.x < _destiny.x;
+
                 yield return new WaitForFixedUpdate();
-                /*Sustituir por --> ()=>currentGameState=GameState.inGame   
-                yield return new WaitUntil(() => true);*/
+                yield return new WaitUntil(() =>
+                    GameManager.SI.currentGameState != GameState.MainMenu);
             }
 
             _sprite.flipX = transform.position.x < PlayerInput.SI.gameObject.transform.position.x;
 
-
             _cExplosion = StartCoroutine(AttackExplosion());
-            SFXManager.SI.PlaySound(Sound.ovniDetenido);
+            SFXManager.SI.PlaySound(Sound.AlienStay);
             yield return new WaitUntil(() => _cExplosion == null);
         }
 
         RestartValues();
-        _cPatrol = null;
-        SFXManager.SI.PlaySound(Sound.ovniSalida);
-
+        SFXManager.SI.PlaySound(Sound.AlienExit);
     }
 
 
@@ -93,8 +95,15 @@ public class AlienBehavior : MonoBehaviour
         attackPoint.gameObject.SetActive(true);
         attackPoint.gameObject.transform.position = PlayerInput.SI.gameObject.transform.position;
         _currentShoots++;
-        yield return new WaitForSeconds(explosionTime);
-        SFXManager.SI.PlaySound(Sound.meteorito);
+        var currentExplosionTime = 0f;
+        while (currentExplosionTime < explosionTime)
+        {
+            currentExplosionTime += Time.deltaTime;
+            yield return new WaitUntil(() => GameManager.SI.currentGameState != GameState.MainMenu);
+            yield return new WaitForEndOfFrame();
+        }
+
+        SFXManager.SI.PlaySound(Sound.Meteorite);
         attackPoint.Explosion();
         _cExplosion = null;
     }
@@ -114,6 +123,6 @@ public class AlienBehavior : MonoBehaviour
 
     private void OnEnable()
     {
-        _cPatrol = _cPatrol ?? StartCoroutine(AlienPatrol());
+        _cPatrol = _cPatrol == null ? StartCoroutine(AlienPatrol()) : _cPatrol;
     }
 }

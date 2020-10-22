@@ -13,6 +13,7 @@ public class Pattern : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (GameManager.SI.currentGameState != GameState.InGame) return;
         transform.Translate(velocity * Time.deltaTime, 0, 0);
         if (transform.position.x > resetPoint.position.x)
         {

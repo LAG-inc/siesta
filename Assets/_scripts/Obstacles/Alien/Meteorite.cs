@@ -21,16 +21,25 @@ public class Meteorite : MonoBehaviour
     private void OnEnable()
     {
         transform.position = _initialPosition;
+
         _collider.enabled = true;
+
         _animator.Rebind();
-        var vector = new Vector3(_target.x - transform.position.x, _target.y - transform.position.y);
+
+        var vector = new Vector3(Mathf.Abs(_target.x - transform.position.x),
+            Mathf.Abs(_target.y - transform.position.y));
+
         _target = GameObject.FindGameObjectWithTag("Player").transform.position;
-        transform.rotation = Quaternion.Euler(0, 0, Util.GetAngleFromVector(vector) + 90);
+
+        transform.rotation = Quaternion.Euler(0, 0, Util.GetAngleFromVector(vector));
     }
 
     private void FixedUpdate()
     {
+        if (GameManager.SI.currentGameState == GameState.MainMenu) return;
+
         transform.position = Vector3.MoveTowards(transform.position, _target, velocity * Time.deltaTime);
+
         if (transform.position == _target) Boom();
     }
 
@@ -44,6 +53,7 @@ public class Meteorite : MonoBehaviour
 
     private void Boom()
     {
+        SFXManager.SI.PlaySound(Sound.Meteorite);
         _collider.enabled = false;
         _animator.SetTrigger(AnimExplosion);
     }
