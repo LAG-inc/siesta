@@ -27,11 +27,16 @@ public class AlienBehavior : MonoBehaviour
 
     private void Awake()
     {
-        explosionTime = explosionTime > 0 ? explosionTime : 2;
+        explosionTime = explosionTime > 0 ? explosionTime : 3;
         _sprite = GetComponent<SpriteRenderer>();
         _goOn = true;
         _initialPosition = transform.position;
         _currentShoots = 0;
+    }
+
+    private void Start()
+    {
+        SFXManager.SI.PlaySound(Sound.ovniLlegada);
     }
 
     private void FixedUpdate()
@@ -72,11 +77,14 @@ public class AlienBehavior : MonoBehaviour
 
 
             _cExplosion = StartCoroutine(AttackExplosion());
+            SFXManager.SI.PlaySound(Sound.ovniDetenido);
             yield return new WaitUntil(() => _cExplosion == null);
         }
 
         RestartValues();
         _cPatrol = null;
+        SFXManager.SI.PlaySound(Sound.ovniSalida);
+
     }
 
 
@@ -86,6 +94,7 @@ public class AlienBehavior : MonoBehaviour
         attackPoint.gameObject.transform.position = PlayerInput.SI.gameObject.transform.position;
         _currentShoots++;
         yield return new WaitForSeconds(explosionTime);
+        SFXManager.SI.PlaySound(Sound.meteorito);
         attackPoint.Explosion();
         _cExplosion = null;
     }

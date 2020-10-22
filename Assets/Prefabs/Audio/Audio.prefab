@@ -172,7 +172,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -299,7 +299,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 10580291e2139db42b89b1a5590ac497, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 0.4
+  m_Pitch: 0.45
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c575b9a6f63f5f8498ec1add9c106e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultAudioLevel: 0.5
+  defaultAudioLevel: 0.25
 --- !u!1 &1961026710
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c575b9a6f63f5f8498ec1add9c106e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultAudioLevel: 0.6
+  defaultAudioLevel: 0.25
 --- !u!1 &2125188819
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,7 +960,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f512bdfc8b9cf004590535054bb800fd, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1735,6 +1735,9 @@ MonoBehaviour:
   deslizar: {fileID: 1628579222}
   salto: {fileID: 1961026712}
   choqueObjeto: {fileID: 143451535}
-  ovni: {fileID: 1941279119}
   checkpoint: {fileID: 0}
   meteorito: {fileID: 7396165813752228674}
+  caer: {fileID: 6783306750008157037}
+  ovniLlegada: {fileID: 1941279119}
+  ovniSalida: {fileID: 8464153141944270642}
+  ovniDetenido: {fileID: 8459462398306003971}

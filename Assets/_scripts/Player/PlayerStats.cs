@@ -44,13 +44,17 @@ public class PlayerStats : MonoBehaviour
         _currentLife = lostLife ? _currentLife-- : _currentLife++;
     }
 
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Obstacle")) return;
+        if (!other.CompareTag("Obstacle") && !other.CompareTag("Meteorite")) return;
         if (_currentInmTime < immuneTime) return;
 
+        if(other.CompareTag("Obstacle")) SFXManager.SI.PlaySound(Sound.choqueObjeto);
+        if(other.CompareTag("Meteorite")) SFXManager.SI.PlaySound(Sound.meteorito);
+
         _currentInmTime = 0;
+
+        
 
         Debug.Log("Hit");
 
@@ -59,6 +63,8 @@ public class PlayerStats : MonoBehaviour
 
         if (_currentLife > 0) PlayerAnimation.SI.ToggleColorInvoke(immuneTime);
         else Die();
+
+
     }
 
 

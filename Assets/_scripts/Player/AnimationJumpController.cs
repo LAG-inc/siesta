@@ -2,6 +2,7 @@
 
 public class AnimationJumpController : StateMachineBehaviour
 {
+    int i = 0;
     //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -9,15 +10,20 @@ public class AnimationJumpController : StateMachineBehaviour
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
-    //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        i++;
+        if(i == 60)
+        {
+            SFXManager.SI.PlaySound(Sound.caer);
+        }
+    }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         PlayerInput.SI.IsJumping = false;
+        i = 0;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
