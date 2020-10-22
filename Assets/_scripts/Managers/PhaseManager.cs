@@ -32,7 +32,10 @@ public class PhaseManager : MonoBehaviour
 
     void Update()
     {
-        if (RemainingPhases <= 0 || _pause) return;
+        //if (RemainingPhases <= 0 || _pause) return;
+        if (_pause) return;
+        if (RemainingPhases <= 0)
+            GameManager.SI.ChangeGameState(GameState.Win);
         _timeBetweenPhase -= Time.deltaTime;
         if (_timeBetweenPhase <= 0 && _patternManager.finished)
         {
@@ -47,6 +50,7 @@ public class PhaseManager : MonoBehaviour
         _patternManager.remainingPattern = phases[_currentPhase++];
         _patternManager.finished = false;
         RemainingPhases--;
+        PlayerStats.SI.retries = 0;
     }
 
     public void Pause(bool pause)

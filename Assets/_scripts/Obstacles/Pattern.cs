@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Pattern : MonoBehaviour
 {
-    [SerializeField] private float velocity = 1.0f;
+    public float velocity = 1.0f;
     private Transform resetPoint;
 
     private void Awake()

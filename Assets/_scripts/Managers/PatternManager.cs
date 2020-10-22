@@ -58,7 +58,7 @@ public class PatternManager : MonoBehaviour
         if (remainingPattern <= 0)
         {
             //finished = true;
-            UIManager.SI.PlayTimeLineAttemps(100);
+            UIManager.SI.PlayTimeLineAttemps(PlayerStats.SI.retries);
             return;
         }
 

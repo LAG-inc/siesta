@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -31,8 +30,11 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private PlayableDirector _attemptsIN;
 
-    //Contenedor de la UI en el juego      
+    //Contenedor de la UI en el juego
     [SerializeField] private GameObject _hud;
+    [SerializeField] private GameObject _gameOver;
+
+    private List<Image> _initialLifesImages;
 
     #endregion
 
@@ -42,6 +44,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
 
     #endregion
+
+    void Start()
+    {
+        _initialLifesImages = new List<Image>(_lifesImages);
+    }
 
     public void ShowPauseMenu()
     {
@@ -90,10 +97,23 @@ public class UIManager : MonoBehaviour
         _lifesImages.Remove(_lifesImages[_lifesImages.Count - 1]);
     }
 
+    private void ActiveLifes()
+    {
+        for (int i = 0; i < _initialLifesImages.Count; i++)
+        {
+            _lifesImages.Add(_initialLifesImages[i]);
+            _lifesImages[i].gameObject.SetActive(true);
+        }
+    }
 
     public void ResetGame()
     {
-        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(0);
+        ActiveLifes();
+        _gameOver.SetActive(false);
+        GameManager.SI.ChangeGameState(GameState.InGame);
+        PlayerStats.SI.Respawn();
+        PatternManager.SI.remainingPattern = PhaseManager.SI.GetCurrentPhase();
     }
 
     public void RefreshAttempts(int number)

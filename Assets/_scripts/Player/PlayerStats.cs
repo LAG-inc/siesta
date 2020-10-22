@@ -11,6 +11,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField, Range(0.5f, 3f)] private float immuneTime;
     private float _currentInmTime;
     private int _currentLife;
+    public int retries;
     public UnityEvent onDie;
 
     //Llamar en otras clases sin referenciar
@@ -44,9 +45,7 @@ public class PlayerStats : MonoBehaviour
 
         _currentLife--;
 
-
         _currentInmTime = 0;
-
 
         UIManager.SI.LoseLife();
 
@@ -60,6 +59,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Die()
     {
+        retries++;
         onDie.Invoke();
         GameManager.SI.ChangeGameState(GameState.GameOver);
     }
