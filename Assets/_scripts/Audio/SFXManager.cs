@@ -5,9 +5,12 @@ public enum Sound
     deslizar,
     salto,
     choqueObjeto,
-    ovni,
     checkpoint,
-    meteorito
+    meteorito,
+    caer,
+    ovniLlegada,
+    ovniSalida,
+    ovniDetenido
 }
 
 public class SFXManager : MonoBehaviour
@@ -20,14 +23,14 @@ public class SFXManager : MonoBehaviour
     }
 
     //Referencias a los audios source respectivos
-    [SerializeField] private AudioSource deslizar, salto, choqueObjeto, ovni, checkpoint, meteorito;
+    [SerializeField] private AudioSource deslizar, salto, choqueObjeto, checkpoint, meteorito, caer, ovniLlegada, ovniSalida, ovniDetenido;
 
     public void PlaySound(Sound soundToPlay)
     {
         switch (soundToPlay)
         {
             case Sound.deslizar:
-                deslizar.PlayOneShot(deslizar.clip);
+                if(!deslizar.isPlaying) deslizar.PlayOneShot(deslizar.clip);
                 break;
             case Sound.salto:
                 salto.PlayOneShot(salto.clip);
@@ -35,15 +38,37 @@ public class SFXManager : MonoBehaviour
             case Sound.choqueObjeto:
                 choqueObjeto.PlayOneShot(choqueObjeto.clip);
                 break;
-            case Sound.ovni:
-                ovni.PlayOneShot(ovni.clip);
+            case Sound.ovniLlegada:
+                ovniLlegada.PlayOneShot(ovniLlegada.clip);
                 break;
             case Sound.checkpoint:
                 checkpoint.PlayOneShot(checkpoint.clip);
                 break;
             case Sound.meteorito:
-                meteorito.PlayOneShot(meteorito.clip);
+                if (!meteorito.isPlaying) meteorito.PlayOneShot(meteorito.clip);
                 break;
+            case Sound.caer:
+                caer.PlayOneShot(caer.clip);
+                break;
+            case Sound.ovniSalida:
+                ovniSalida.PlayOneShot(ovniSalida.clip);
+                break;
+            case Sound.ovniDetenido:
+                ovniDetenido.PlayOneShot(ovniDetenido.clip);
+                break;
+        }
+    }
+
+    private void Update()
+    {
+        if (GameManager.SI.currentGameState != GameState.InGame) return;
+
+        if (!PlayerInput.SI.IsJumping)
+        {
+            PlaySound(Sound.deslizar);
+        }
+        else{
+            deslizar.Stop();
         }
     }
 }

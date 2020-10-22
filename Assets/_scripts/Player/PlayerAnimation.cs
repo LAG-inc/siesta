@@ -49,6 +49,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             _playerAnimator.SetTrigger(Jump);
             _shadowAnim.SetTrigger(Jump);
+            SFXManager.SI.PlaySound(Sound.salto);
         }
 
         transform.localPosition = new Vector3(transform.localPosition.x,
