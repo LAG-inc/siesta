@@ -1,0 +1,1100 @@
+fileFormatVersion: 2
+guid: 4745b43c187e2b345b9783310457a46f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2157822432361301472
+    second: spritesheet meteorito 20 fps_0
+  - first:
+      213: 6062382935061193896
+    second: spritesheet meteorito 20 fps_1
+  - first:
+      213: 7765576486116635291
+    second: spritesheet meteorito 20 fps_2
+  - first:
+      213: 385529319572433752
+    second: spritesheet meteorito 20 fps_3
+  - first:
+      213: 6429609878103359352
+    second: spritesheet meteorito 20 fps_4
+  - first:
+      213: -182297925411476069
+    second: spritesheet meteorito 20 fps_5
+  - first:
+      213: 4676878836818304264
+    second: spritesheet meteorito 20 fps_6
+  - first:
+      213: -1703433846740102264
+    second: spritesheet meteorito 20 fps_7
+  - first:
+      213: 3509288970254091509
+    second: spritesheet meteorito 20 fps_8
+  - first:
+      213: 2536469019639323151
+    second: spritesheet meteorito 20 fps_9
+  - first:
+      213: 3173316752959986564
+    second: spritesheet meteorito 20 fps_10
+  - first:
+      213: -6810334740733476911
+    second: spritesheet meteorito 20 fps_11
+  - first:
+      213: 565346526095542862
+    second: spritesheet meteorito 20 fps_12
+  - first:
+      213: -4547163121927431906
+    second: spritesheet meteorito 20 fps_13
+  - first:
+      213: 9049095836565909506
+    second: spritesheet meteorito 20 fps_14
+  - first:
+      213: -5938158241545814724
+    second: spritesheet meteorito 20 fps_15
+  - first:
+      213: 7478368613180731169
+    second: spritesheet meteorito 20 fps_16
+  - first:
+      213: 6287063886238691132
+    second: spritesheet meteorito 20 fps_17
+  - first:
+      213: 8802513084140833904
+    second: spritesheet meteorito 20 fps_18
+  - first:
+      213: -8349299383569526636
+    second: spritesheet meteorito 20 fps_19
+  - first:
+      213: -2464280840768047990
+    second: spritesheet meteorito 20 fps_20
+  - first:
+      213: -2333750970420387580
+    second: spritesheet meteorito 20 fps_21
+  - first:
+      213: -662798500980943784
+    second: spritesheet meteorito 20 fps_22
+  - first:
+      213: -8299976681931634876
+    second: spritesheet meteorito 20 fps_23
+  - first:
+      213: 8095017657791104893
+    second: spritesheet meteorito 20 fps_24
+  - first:
+      213: 6029437496780358327
+    second: spritesheet meteorito 20 fps_25
+  - first:
+      213: 5111323923291318598
+    second: spritesheet meteorito 20 fps_26
+  - first:
+      213: 6321531782126114501
+    second: spritesheet meteorito 20 fps_27
+  - first:
+      213: -3709792631130503530
+    second: spritesheet meteorito 20 fps_28
+  - first:
+      213: 3990289465846522505
+    second: spritesheet meteorito 20 fps_29
+  - first:
+      213: -220400613743068456
+    second: spritesheet meteorito 20 fps_30
+  - first:
+      213: 5537095437628131134
+    second: spritesheet meteorito 20 fps_31
+  - first:
+      213: -1550284035088529719
+    second: spritesheet meteorito 20 fps_32
+  - first:
+      213: -5805101184674936411
+    second: spritesheet meteorito 20 fps_33
+  - first:
+      213: -4964355264067099002
+    second: spritesheet meteorito 20 fps_34
+  - first:
+      213: -8517603133646838759
+    second: spritesheet meteorito 20 fps_35
+  - first:
+      213: -114222943323671651
+    second: spritesheet meteorito 20 fps_36
+  - first:
+      213: 7777764139420458814
+    second: spritesheet meteorito 20 fps_37
+  - first:
+      213: 4414142048914138919
+    second: spritesheet meteorito 20 fps_38
+  - first:
+      213: 4911339776121707461
+    second: spritesheet meteorito 20 fps_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_0
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 3618
+        width: 210
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a3cbe2eefdd02e0800000000000000
+      internalID: -2157822432361301472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_1
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 3618
+        width: 210
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a466b8d829e12450800000000000000
+      internalID: 6062382935061193896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_2
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 3618
+        width: 243
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92bb1b9baed4cb60800000000000000
+      internalID: 7765576486116635291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_3
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 3618
+        width: 243
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bec9f9fdca95500800000000000000
+      internalID: 385529319572433752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_4
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 3618
+        width: 226
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f71bc5e109a3950800000000000000
+      internalID: 6429609878103359352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 3102
+        width: 226
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dee80b009587df0800000000000000
+      internalID: -182297925411476069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_6
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 3102
+        width: 242
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80dd81ed58c97e040800000000000000
+      internalID: 4676878836818304264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_7
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 3102
+        width: 242
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883ddaa01ff2c58e0800000000000000
+      internalID: -1703433846740102264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_8
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 3103
+        width: 210
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f40136b9bf73b030800000000000000
+      internalID: 3509288970254091509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_9
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 3103
+        width: 210
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a92637229533320800000000000000
+      internalID: 2536469019639323151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_10
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 2586
+        width: 202
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bd9fb16c2e90c20800000000000000
+      internalID: 3173316752959986564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_11
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 2586
+        width: 202
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df3411d2a4dc71a0800000000000000
+      internalID: -6810334740733476911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_12
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 2585
+        width: 234
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a0dee8ba388d700800000000000000
+      internalID: 565346526095542862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_13
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 2585
+        width: 234
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1952c58b3b35e0c0800000000000000
+      internalID: -4547163121927431906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_14
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 2586
+        width: 218
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2003afc18b8d49d70800000000000000
+      internalID: 9049095836565909506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_15
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 2070
+        width: 218
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d7a908a8c679da0800000000000000
+      internalID: -5938158241545814724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_16
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 2072
+        width: 256
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f6110b1a088c760800000000000000
+      internalID: 7478368613180731169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_17
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 2072
+        width: 256
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fa1735b43204750800000000000000
+      internalID: 6287063886238691132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_18
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 2072
+        width: 188
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c41f6230fc82a70800000000000000
+      internalID: 8802513084140833904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_19
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 2072
+        width: 188
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49053f67274512c80800000000000000
+      internalID: -8349299383569526636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_20
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1554
+        width: 200
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a843833b1ad1dcdd0800000000000000
+      internalID: -2464280840768047990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_21
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1554
+        width: 200
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401aedd6bd9dc9fd0800000000000000
+      internalID: -2333750970420387580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_22
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1556
+        width: 236
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8549e5766444dc6f0800000000000000
+      internalID: -662798500980943784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_23
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 1556
+        width: 236
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4478075de2f80dc80800000000000000
+      internalID: -8299976681931634876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_24
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1555
+        width: 277
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d774727aba7475070800000000000000
+      internalID: 8095017657791104893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_25
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1039
+        width: 277
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2830f357ddca350800000000000000
+      internalID: 6029437496780358327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_26
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1039
+        width: 212
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6492cbbf6021fe640800000000000000
+      internalID: 5111323923291318598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_27
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1039
+        width: 212
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c618f5b9a79ab750800000000000000
+      internalID: 6321531782126114501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_28
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1038
+        width: 228
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696ca1fd14b248cc0800000000000000
+      internalID: -3709792631130503530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_29
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1038
+        width: 228
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982e3c2b02b506730800000000000000
+      internalID: 3990289465846522505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_30
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 523
+        width: 198
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8daf09d3fcaf0fcf0800000000000000
+      internalID: -220400613743068456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_31
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 523
+        width: 198
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37c247b6f6b7dc40800000000000000
+      internalID: 5537095437628131134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_32
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 523
+        width: 230
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6c69342e84c7ae0800000000000000
+      internalID: -1550284035088529719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_33
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 523
+        width: 230
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a94042ba33207fa0800000000000000
+      internalID: -5805101184674936411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_34
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 522
+        width: 237
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686a07a80311b1bb0800000000000000
+      internalID: -4964355264067099002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_35
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 6
+        width: 237
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914e93104156bc980800000000000000
+      internalID: -8517603133646838759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_36
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 6
+        width: 210
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d933ef596d23a6ef0800000000000000
+      internalID: -114222943323671651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_37
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 6
+        width: 210
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f9de4c64b20fb60800000000000000
+      internalID: 7777764139420458814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_38
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 6
+        width: 196
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72764ad6ece224d30800000000000000
+      internalID: 4414142048914138919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet meteorito 20 fps_39
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 6
+        width: 196
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb1bf64185982440800000000000000
+      internalID: 4911339776121707461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

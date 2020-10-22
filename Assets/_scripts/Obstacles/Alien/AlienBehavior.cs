@@ -1,17 +1,14 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class AlienBehavior : MonoBehaviour
 {
     [Header("Behavior vars")] [SerializeField, Range(0, 10)]
     private float velocity;
 
-    [SerializeField, Range(0, 5)] private float timeBetweenShot;
+    [SerializeField, Range(0, 5)] private float explosionTime;
     [SerializeField, Range(0, 5)] private int shoots;
-    private List<GameObject> _projectiles = new List<GameObject>();
-    private List<GameObject> _projectilesInGame = new List<GameObject>();
+    [SerializeField] private AttackPoint attackPoint;
 
     [Header("Points pattern")] [SerializeField]
     private Transform[] patternPoints;
@@ -20,54 +17,32 @@ public class AlienBehavior : MonoBehaviour
     private int _currentShoots;
     private int _currentPattern;
     private bool _goOn;
-    private Coroutine _cGoAttack;
-
-    [SerializeReference, Tooltip("Ingresar al padre de los projectiles")]
-    private GameObject parentProjectiles;
+    private Coroutine _cPatrol;
+    private Coroutine _cExplosion;
 
     //Move vars
     private Vector3 _destiny;
     private Vector3 _initialPosition;
-
+    private SpriteRenderer _sprite;
 
     private void Awake()
     {
-        timeBetweenShot = timeBetweenShot > 0 ? timeBetweenShot : 2;
-        for (var i = 0; i < parentProjectiles.transform.childCount; i++)
-        {
-            if (parentProjectiles.transform.GetChild(i).CompareTag("Obstacle"))
-            {
-                _projectiles.Add(parentProjectiles.transform.GetChild(i).gameObject);
-            }
-        }
-
+        explosionTime = explosionTime > 0 ? explosionTime : 2;
+        _sprite = GetComponent<SpriteRenderer>();
         _goOn = true;
         _initialPosition = transform.position;
         _currentShoots = 0;
     }
 
-
     private void FixedUpdate()
     {
-        if (_cGoAttack == null)
+        if (_cPatrol == null)
         {
             transform.position = Vector3.MoveTowards(transform.position, _destiny, velocity * Time.fixedDeltaTime);
         }
 
-        if (_cGoAttack == null && transform.position == _destiny && _projectilesInGame.Count == 0)
+        if (_cPatrol == null && transform.position == _destiny)
             gameObject.SetActive(false);
-    }
-
-    private void Attack()
-    {
-        var currentProjectile = _projectiles.Count > 1 ? Random.Range(0, _projectiles.Count) : 0;
-        var projectile = _projectiles[currentProjectile];
-
-
-        projectile.gameObject.SetActive(true);
-        _projectiles.Remove(projectile);
-        _projectilesInGame.Add(projectile);
-        _currentShoots++;
     }
 
     private void RestartValues()
@@ -76,7 +51,7 @@ public class AlienBehavior : MonoBehaviour
         _currentShoots = 0;
     }
 
-    private IEnumerator AlienToAttack()
+    private IEnumerator AlienPatrol()
     {
         while (_currentShoots < shoots)
 
@@ -87,18 +62,32 @@ public class AlienBehavior : MonoBehaviour
             {
                 transform.position = Vector3.MoveTowards(transform.position, _destiny,
                     velocity * Time.fixedDeltaTime);
-
+                _sprite.flipX = transform.position.x < _destiny.x;
                 yield return new WaitForFixedUpdate();
                 /*Sustituir por --> ()=>currentGameState=GameState.inGame   
                 yield return new WaitUntil(() => true);*/
             }
 
-            Attack();
-            yield return new WaitForSeconds(timeBetweenShot);
+            _sprite.flipX = transform.position.x < PlayerInput.SI.gameObject.transform.position.x;
+
+
+            _cExplosion = StartCoroutine(AttackExplosion());
+            yield return new WaitUntil(() => _cExplosion == null);
         }
 
         RestartValues();
-        _cGoAttack = null;
+        _cPatrol = null;
+    }
+
+
+    private IEnumerator AttackExplosion()
+    {
+        attackPoint.gameObject.SetActive(true);
+        attackPoint.gameObject.transform.position = PlayerInput.SI.gameObject.transform.position;
+        _currentShoots++;
+        yield return new WaitForSeconds(explosionTime);
+        attackPoint.Explosion();
+        _cExplosion = null;
     }
 
 
@@ -116,18 +105,6 @@ public class AlienBehavior : MonoBehaviour
 
     private void OnEnable()
     {
-        foreach (var projectile in _projectiles)
-        {
-            projectile.SetActive(false);
-        }
-
-        _cGoAttack = _cGoAttack ?? StartCoroutine(AlienToAttack());
-    }
-
-
-    public void ProjectileDestroy(GameObject projectile)
-    {
-        _projectilesInGame.Remove(projectile);
-        _projectiles.Add(projectile);
+        _cPatrol = _cPatrol ?? StartCoroutine(AlienPatrol());
     }
 }

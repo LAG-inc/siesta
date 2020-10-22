@@ -7,21 +7,38 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="_scripts" t="Include">
+          <e p="Audio" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+            <e p="AudioNewTrack.cs" t="Include" />
+            <e p="AudioVolumenController.cs" t="Include" />
+            <e p="AudioVolumenManager.cs" t="Include" />
+            <e p="DontDestroyOnLoad.cs" t="Include" />
+            <e p="SFXManager.cs" t="Include" />
+          </e>
           <e p="Effects" t="Include">
             <e p="EffectBase.cs" t="Include" />
             <e p="Fade.cs" t="Include" />
             <e p="MixColor.cs" t="Include" />
             <e p="ParallaxBackground.cs" t="Include" />
           </e>
+          <e p="GUI" t="Include">
+            <e p="UIManager.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="GameManager.cs" t="Include" />
+            <e p="PatternManager.cs" t="Include" />
+            <e p="PhaseManager.cs" t="Include" />
+          </e>
           <e p="Obstacles" t="Include">
             <e p="Alien" t="Include">
               <e p="AlienBehavior.cs" t="Include" />
-              <e p="Projectile.cs" t="Include" />
+              <e p="AnimatorExplosionEnd.cs" t="Include" />
+              <e p="AttackPoint.cs" t="Include" />
+              <e p="Meteorite.cs" t="Include" />
             </e>
-            <e p="Phase.cs" t="Include" />
+            <e p="Pattern.cs" t="Include" />
             <e p="ScriptableObstacle.cs" t="Include" />
             <e p="SpawnArea.cs" t="Include" />
-            <e p="SpawnManager.cs" t="Include" />
             <e p="SpawnPoint.cs" t="Include" />
           </e>
           <e p="Player" t="Include">

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Rock
   m_EditorClassIdentifier: 
   obstacleName: Rock
-  color:
-    serializedVersion: 2
-    rgba: 4280695920
+  sprite: {fileID: 21300000, guid: b59e0608150921d449aa48c19063e7b3, type: 3}
+  flipX: 1
+  colliderX: 0.95
+  colliderY: 1.13
+  rotation: {x: 0, y: 0, z: 0, w: 0}
