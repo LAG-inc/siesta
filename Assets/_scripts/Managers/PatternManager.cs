@@ -57,7 +57,8 @@ public class PatternManager : MonoBehaviour
 
         if (remainingPattern <= 0)
         {
-            finished = true;
+            //finished = true;
+            UIManager.SI.PlayTimeLineAttemps(100);
             return;
         }
 
@@ -122,4 +123,5 @@ public class PatternManager : MonoBehaviour
         ChildCount++;
         _canRun = ChildCount >= ChildToRun;
     }
+
 }

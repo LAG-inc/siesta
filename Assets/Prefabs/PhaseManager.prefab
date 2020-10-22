@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8468531065557214472}
   - component: {fileID: 8468531065557214475}
   - component: {fileID: 8468531065557214473}
-  - component: {fileID: 3632625378576732152}
+  - component: {fileID: 9304150}
   m_Layer: 0
   m_Name: PhaseManager
   m_TagString: Untagged
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialTimeBetweenPhase: 20
-  phases: 020000000300000004000000
+  phases: 040000000200000003000000
 --- !u!114 &8468531065557214473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
   HowToUseThis: "Phases: contiene la lista de las fases, el valor de cada elemento
     representa el n\xFAmero de patrones que tendr\xE1 dicha fase.\n\nInitial Time
     Between: tiempo entre cada una de las fases."
---- !u!114 &3632625378576732152
+--- !u!114 &9304150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -81,7 +81,7 @@ MonoBehaviour:
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 8468531065557214475}
-          m_MethodName: Pause
+          m_MethodName: ControlBetweenPhases
           m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

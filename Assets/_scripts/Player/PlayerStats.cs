@@ -47,12 +47,14 @@ public class PlayerStats : MonoBehaviour
 
         _currentInmTime = 0;
 
-        Debug.Log("Hit");
 
+        UIManager.SI.LoseLife();
 
-        if (_currentLife > 0) PlayerAnimation.SI.ToggleColorInvoke(immuneTime);
+        if (_currentLife > 0)
+        {
+            PlayerAnimation.SI.ToggleColorInvoke(immuneTime);
 
-        else Die();
+        }else Die();
     }
 
 
