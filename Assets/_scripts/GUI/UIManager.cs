@@ -23,6 +23,8 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private GameObject _countDownContainer;
 
+    [SerializeField] private GameObject _gameOverContainer;
+
     [SerializeField] private Text _attemptsText;
 
     [SerializeField] private PlayableDirector _gameOverIN;
@@ -93,7 +95,7 @@ public class UIManager : MonoBehaviour
 
     public void ResetGame()
     {
-        SceneManager.LoadScene(0);
+        _gameOverContainer.SetActive(false);
     }
 
     public void RefreshAttempts(int number)

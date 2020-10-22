@@ -388,10 +388,10 @@ RectTransform:
   m_Father: {fileID: 1908302722}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400.84998, y: -150}
-  m_SizeDelta: {x: 500, y: 250}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &617814404
 CanvasRenderer:
@@ -651,10 +651,10 @@ RectTransform:
   m_Father: {fileID: 1908302722}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 913.14996, y: -150}
-  m_SizeDelta: {x: 500, y: 250}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1450997927
 CanvasRenderer:
@@ -1025,11 +1025,13 @@ PlayableDirector:
     value: {fileID: 5129129282593593508}
   - key: {fileID: -4682891847436755347, guid: 5e52bd4d1edf0294886f7b09e14d383f, type: 2}
     value: {fileID: 5129129282593593504}
-  - key: {fileID: -6914268402508536180, guid: dca02a7620fa6714d9b26b5d972f64c5, type: 2}
-    value: {fileID: 1042352149}
   - key: {fileID: -7716165186792866888, guid: dca02a7620fa6714d9b26b5d972f64c5, type: 2}
     value: {fileID: 1346315093}
   - key: {fileID: 2534631963119766160, guid: dca02a7620fa6714d9b26b5d972f64c5, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5564255180430202798, guid: dca02a7620fa6714d9b26b5d972f64c5, type: 2}
+    value: {fileID: 1042352149}
+  - key: {fileID: 8932637894593955899, guid: dca02a7620fa6714d9b26b5d972f64c5, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
@@ -2594,7 +2596,7 @@ PrefabInstance:
     - target: {fileID: 2986450070320192280, guid: 94f572f17ce92bc4ea40bc7a91d65e6b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: Play
+      value: StopSound
       objectReference: {fileID: 0}
     - target: {fileID: 2986450070320192280, guid: 94f572f17ce92bc4ea40bc7a91d65e6b,
         type: 3}
@@ -2604,7 +2606,7 @@ PrefabInstance:
     - target: {fileID: 2986450070320192280, guid: 94f572f17ce92bc4ea40bc7a91d65e6b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: StopSound
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 2986450070320192280, guid: 94f572f17ce92bc4ea40bc7a91d65e6b,
         type: 3}
@@ -2619,12 +2621,17 @@ PrefabInstance:
     - target: {fileID: 2986450070320192280, guid: 94f572f17ce92bc4ea40bc7a91d65e6b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_IntArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2986450070320192280, guid: 94f572f17ce92bc4ea40bc7a91d65e6b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2986450070320192280, guid: 94f572f17ce92bc4ea40bc7a91d65e6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2986450070320192281, guid: 94f572f17ce92bc4ea40bc7a91d65e6b,
         type: 3}
@@ -4654,6 +4661,11 @@ PrefabInstance:
       propertyPath: _attemptsIN
       value: 
       objectReference: {fileID: 2071085990}
+    - target: {fileID: 5468701144121961662, guid: 5b05788bb04290f49a6c449523d9374a,
+        type: 3}
+      propertyPath: _gameOverContainer
+      value: 
+      objectReference: {fileID: 2052973684376657730}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b05788bb04290f49a6c449523d9374a, type: 3}
 --- !u!1 &4759449098680973251 stripped
