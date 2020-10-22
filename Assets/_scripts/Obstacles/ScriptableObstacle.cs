@@ -4,5 +4,9 @@
 public class ScriptableObstacle : ScriptableObject
 {
     public string obstacleName;
-    public Color32 color;
+    public Sprite sprite;
+    public bool flipX;
+    public float colliderX;
+    public float colliderY;
+    public Quaternion rotation;
 }

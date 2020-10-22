@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69667cdc81c5fda40bd6629729c4ce49, type: 3}
-  m_Name: Rock
+  m_Name: Moai
   m_EditorClassIdentifier: 
-  obstacleName: Rock
-  sprite: {fileID: 21300000, guid: b59e0608150921d449aa48c19063e7b3, type: 3}
-  flipX: 1
-  colliderX: 0.95
-  colliderY: 1.13
+  obstacleName: Moai
+  sprite: {fileID: 21300000, guid: 73e60fa4e0179f04e83677121a33a523, type: 3}
+  flipX: 0
+  colliderX: 1.1
+  colliderY: 0.7
   rotation: {x: 0, y: 0, z: 0, w: 0}
