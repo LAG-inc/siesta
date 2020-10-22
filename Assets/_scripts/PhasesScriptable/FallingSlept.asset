@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4006b6a2fd06c494c942ecf24f50fbd0, type: 3}
-  m_Name: StartNapping
+  m_Name: FallingSlept
   m_EditorClassIdentifier: 
-  fade: 0
+  fade: 1
   mixColors: 0
-  patternVelocity: 5
-  metPerPhase: 2
-  alien: 0
-  alienType: 0
+  patternVelocity: 6
+  metPerPhase: 4
+  alien: 1
+  alienType: 1
