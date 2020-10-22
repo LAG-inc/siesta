@@ -22,6 +22,8 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private GameObject _countDownContainer;
 
+    [SerializeField] private GameObject _gameOverContainer;
+
     [SerializeField] private Text _attemptsText;
 
     [SerializeField] private PlayableDirector _gameOverIN;
