@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Pattern : MonoBehaviour
 {
-    [SerializeField] private float velocity = 1.0f;
+    [SerializeField] public float velocity = 1.0f;
     [SerializeField] private Transform resetPoint;
 
     private void Awake()
@@ -19,5 +19,10 @@ public class Pattern : MonoBehaviour
         {
             PatternManager.SI.ResetPatternValues(gameObject);
         }
+    }
+
+    public void SetPatternVelocity(float lVelocity)
+    {
+        velocity = lVelocity;
     }
 }
