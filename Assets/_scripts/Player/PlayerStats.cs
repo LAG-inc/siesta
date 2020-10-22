@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
     private float _currentInmTime;
     private int _currentLife;
     private int _currentCollectable;
-    public UnityEvent onDie;
+    public UnityEvent onHitObstacle;
 
     //Llamar en otras clases sin referenciar
     public static PlayerStats SI;
@@ -39,14 +39,9 @@ public class PlayerStats : MonoBehaviour
     /// Resta o suma la vida del player
     /// </summary>
     /// <param name="lostLife">True si resta vida, false si suma</param>
-    public void ChangeLife(bool lostLife)
+    private void ChangeLife(bool lostLife)
     {
         _currentLife = lostLife ? _currentLife-- : _currentLife++;
-    }
-
-    public int GetCurrentLife()
-    {
-        return _currentLife;
     }
 
 
@@ -54,12 +49,26 @@ public class PlayerStats : MonoBehaviour
     {
         if (!other.CompareTag("Obstacle")) return;
         if (_currentInmTime < immuneTime) return;
+
         _currentInmTime = 0;
+
         Debug.Log("Hit");
+
         ChangeLife(true);
 
-        if (_currentLife > 0) return;
+
+        if (_currentLife > 0) PlayerAnimation.SI.ToggleColorInvoke(immuneTime);
+        else Die();
+    }
+
+
+    private void Die()
+    {
         GameManager.SI.currentGameState = GameState.GameOver;
-        onDie.Invoke();
+    }
+
+    public void respawn()
+    {
+        _currentLife = initialLife;
     }
 }

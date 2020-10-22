@@ -5,7 +5,7 @@ public class ParallaxBackground : MonoBehaviour
 {
     [SerializeField, Range(0, 10)] private float initialBackgroundVelocity;
 
-    [SerializeField, Tooltip("Entre mas grande mas lento crecer"), Range(0.1f, 10)]
+    [SerializeField, Tooltip("Entr    e mas grande mas lento crecer"), Range(0.1f, 20)]
     private float delayGrowSpeed;
 
     private float _sizeX;
