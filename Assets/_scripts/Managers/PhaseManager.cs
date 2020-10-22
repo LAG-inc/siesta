@@ -13,9 +13,12 @@ public class PhaseManager : MonoBehaviour
     private int _currentPhase = 0;
     private  bool _pause = false;
     private PatternManager _patternManager;
+    public static PhaseManager SI;
 
     void Awake()
     {
+        SI = SI == null ? this : SI;
+
         _remainingPhase = phases.Count;
         _patternManager = GameObject.FindObjectOfType<PatternManager>();
     }

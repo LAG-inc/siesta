@@ -1,23 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public static UIManager sharedInstance;
+    public static UIManager SI;
 
     private void Awake()
     {
-        if(sharedInstance == null)
-        {
-            sharedInstance = this;
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+        SI = SI == null ? this : SI;
     }
 
     #region inGame
@@ -33,6 +27,15 @@ public class UIManager : MonoBehaviour
 
     [SerializeField]
     private Text _attemptsText;
+
+    [SerializeField]
+    private PlayableDirector _gameOverIN;
+
+    [SerializeField]
+    private PlayableDirector _win;
+
+    [SerializeField]    
+    private PlayableDirector _attemptsIN;
 
     //Contenedor de la UI en el juego      
     [SerializeField]
@@ -62,11 +65,6 @@ public class UIManager : MonoBehaviour
         HidePauseMenu();
     }
 
-    public void ExitGame()
-    {
-        //TODO
-    }
-
     public void ShowCountDown(int start)
     {
         _countDownContainer.SetActive(true);
@@ -93,7 +91,7 @@ public class UIManager : MonoBehaviour
 
         HideCountDown();
 
-        //TODO METHOD FOR RESUME GAME
+        PhaseManager.SI.Pause(false);
     }
 
     public void LoseLife()
@@ -105,7 +103,6 @@ public class UIManager : MonoBehaviour
 
     public void ResetGame()
     {
-        //TODO
         SceneManager.LoadScene(0);
     }
 
@@ -113,4 +110,26 @@ public class UIManager : MonoBehaviour
     {
         _attemptsText.text = number.ToString();
     }
+
+    public void InitGame()
+    {
+        GameManager.SI.ChangeGameState(GameState.InGame);
+    }
+
+    public void PlayTimeLineWin()
+    {
+        _win.Play();
+    }
+
+    public void PlayTimeLineGameOver()
+    {
+        _gameOverIN.Play();
+    }
+
+    public void PlayTimeLineAttemps()
+    {
+        if (_attemptsIN.state != PlayState.Playing) _attemptsIN.Play();
+    }
+    
+
 }
