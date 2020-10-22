@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public enum GameState
 {
@@ -12,7 +13,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager SI;
     public GameState currentGameState = GameState.MainMenu;
-    
+
     private void Awake()
     {
         SI = SI == null ? this : SI;
@@ -46,5 +47,10 @@ public class GameManager : MonoBehaviour
         }
 
         currentGameState = newGameState;
+    }
+
+    public void GameReload()
+    {
+        SceneManager.LoadScene(0);
     }
 }

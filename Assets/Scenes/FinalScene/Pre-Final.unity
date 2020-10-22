@@ -1069,31 +1069,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 886ac3bc310439f42bba445738d2512a, type: 3}
---- !u!1 &1811150452 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2749415763051247844, guid: 3812219de3dd80645a90d75c232f5b0e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2749415762929297488}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1811150453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1811150452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6d462037f0267c4f867e63306db3c29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  phaseConfig:
-  - {fileID: 11400000, guid: 2988fb706a9dde1489ddf06294e3f69e, type: 2}
-  - {fileID: 11400000, guid: e640f1d407b88084e9d6edf70d3137bd, type: 2}
-  - {fileID: 11400000, guid: dc229c4424012674e85cc2c68f04bd88, type: 2}
-  _alien: {fileID: 2031825950}
-  background: {fileID: 13413588}
-  isAttacking: 0
 --- !u!1 &1893086523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,29 +1175,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8468531065557214475, guid: 2cac6e69b669a0d4ca273c9923c19518,
-        type: 3}
-      propertyPath: phaseConfig.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8468531065557214475, guid: 2cac6e69b669a0d4ca273c9923c19518,
-        type: 3}
-      propertyPath: phaseConfig.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 2988fb706a9dde1489ddf06294e3f69e,
-        type: 2}
-    - target: {fileID: 8468531065557214475, guid: 2cac6e69b669a0d4ca273c9923c19518,
-        type: 3}
-      propertyPath: phaseConfig.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: e640f1d407b88084e9d6edf70d3137bd,
-        type: 2}
-    - target: {fileID: 8468531065557214475, guid: 2cac6e69b669a0d4ca273c9923c19518,
-        type: 3}
-      propertyPath: phaseConfig.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: dc229c4424012674e85cc2c68f04bd88,
-        type: 2}
     - target: {fileID: 8468531065557214478, guid: 2cac6e69b669a0d4ca273c9923c19518,
         type: 3}
       propertyPath: m_Name
@@ -1390,6 +1342,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1811150453, guid: 3812219de3dd80645a90d75c232f5b0e, type: 3}
+      propertyPath: _alien
+      value: 
+      objectReference: {fileID: 2031825950}
+    - target: {fileID: 1811150453, guid: 3812219de3dd80645a90d75c232f5b0e, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 13413588}
     - target: {fileID: 2749415763051247844, guid: 3812219de3dd80645a90d75c232f5b0e,
         type: 3}
       propertyPath: m_Name
@@ -1618,11 +1578,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2999999146683635028, guid: 7e310a44a2a3069459f96f82154af575,
-        type: 3}
-      propertyPath: initialTimeBetweenPattern
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e310a44a2a3069459f96f82154af575, type: 3}
