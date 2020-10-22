@@ -54,7 +54,18 @@ public class PhaseManager : MonoBehaviour
         _pause = pause;
     }
 
+    public void ControlBetweenPhases(bool pause)
+    {
 
+        if (pause)
+        {
+            GameObject.Find("Alien").GetComponent<AlienBehavior>().RestartValues();
+        }
+        else
+        {
+            _patternManager.finished = true;
+        }
+    }
     public int GetCurrentPhase()
     {
         return _currentPhase;

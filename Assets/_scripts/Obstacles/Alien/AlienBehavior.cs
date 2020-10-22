@@ -51,7 +51,7 @@ public class AlienBehavior : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (GameManager.SI.currentGameState == GameState.MainMenu) return;
+        if (GameManager.SI.currentGameState == GameState.MainMenu ) return;
 
         if (_cPatrol == null)
         {

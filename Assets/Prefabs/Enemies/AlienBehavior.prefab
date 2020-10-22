@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 7043706745769873392}
   - component: {fileID: 7043706745769873393}
   - component: {fileID: 3023026311050480728}
+  - component: {fileID: 8939776770383598183}
   m_Layer: 0
   m_Name: Alien
   m_TagString: Untagged
@@ -422,6 +423,7 @@ MonoBehaviour:
   - {fileID: 7043706744385830008}
   - {fileID: 7043706744475380959}
   - {fileID: 7043706745591360235}
+  currentType: 0
 --- !u!212 &7043706745769873393
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -492,6 +494,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8939776770383598183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7043706745769873398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 86261213b1fba8a42aa769862af038e4, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7043706745769873392}
+          m_MethodName: RestartValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7043706746494635346
 GameObject:
   m_ObjectHideFlags: 0
