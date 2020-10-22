@@ -20,4 +20,9 @@ public class Pattern : MonoBehaviour
             PatternManager.SI.ResetPatternValues(gameObject);
         }
     }
+
+    public void SetPatternVelocity(float lVelocity)
+    {
+        velocity = lVelocity;
+    }
 }

@@ -869,6 +869,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8468531065557214475, guid: 2cac6e69b669a0d4ca273c9923c19518,
+        type: 3}
+      propertyPath: phaseConfig.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468531065557214475, guid: 2cac6e69b669a0d4ca273c9923c19518,
+        type: 3}
+      propertyPath: phaseConfig.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2988fb706a9dde1489ddf06294e3f69e,
+        type: 2}
+    - target: {fileID: 8468531065557214475, guid: 2cac6e69b669a0d4ca273c9923c19518,
+        type: 3}
+      propertyPath: phaseConfig.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: e640f1d407b88084e9d6edf70d3137bd,
+        type: 2}
+    - target: {fileID: 8468531065557214475, guid: 2cac6e69b669a0d4ca273c9923c19518,
+        type: 3}
+      propertyPath: phaseConfig.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: dc229c4424012674e85cc2c68f04bd88,
+        type: 2}
     - target: {fileID: 8468531065557214478, guid: 2cac6e69b669a0d4ca273c9923c19518,
         type: 3}
       propertyPath: m_Name
@@ -1361,6 +1384,21 @@ PrefabInstance:
     - target: {fileID: 7043706744728704558, guid: f6abdc09ea1b97e44ba0759deecbf400,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043706745769873392, guid: f6abdc09ea1b97e44ba0759deecbf400,
+        type: 3}
+      propertyPath: currentType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043706745769873398, guid: f6abdc09ea1b97e44ba0759deecbf400,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043706746494635346, guid: f6abdc09ea1b97e44ba0759deecbf400,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
