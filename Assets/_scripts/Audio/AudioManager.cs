@@ -34,6 +34,8 @@ public class AudioManager : MonoBehaviour
 
     public void StopSound()
     {
+        audioCanBePlayed = false;
         audioTracks[currentTrack].Stop();
+
     }
 }
