@@ -36,6 +36,7 @@ public class PatternManager : MonoBehaviour
         }
 
         _canRun = true;
+        _timeBetweenPattern = initialTimeBetweenPattern;
     }
 
     private void Start()
@@ -51,6 +52,7 @@ public class PatternManager : MonoBehaviour
 
     private void Update()
     {
+
         if (GameManager.SI.currentGameState != GameState.InGame) return;
 
         if (!_canRun) return;
@@ -61,9 +63,7 @@ public class PatternManager : MonoBehaviour
             UIManager.SI.PlayTimeLineAttemps(PlayerStats.SI.retries);
             return;
         }
-
         _timeBetweenPattern -= Time.deltaTime;
-
         if (_timeBetweenPattern <= 0) InitPattern();
     }
 
@@ -88,7 +88,7 @@ public class PatternManager : MonoBehaviour
 
         PhaseConfigurator.SI.MeteoriteAttack();
         remainingPattern--;
-        Debug.Log("Patron: " + remainingPattern);
+        //Debug.Log("Patron: " + remainingPattern);
     }
 
 

@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     {
         if (newGameState == GameState.InGame)
         {
-            //TODO
+            PhaseConfigurator.SI.SetPhaseConfig();
         }
 
         if (newGameState == GameState.GameOver)

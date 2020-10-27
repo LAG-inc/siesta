@@ -27,7 +27,7 @@ public class PhaseManager : MonoBehaviour
 
     private void Start()
     {
-        PhaseConfigurator.SI.SetPhaseConfig();
+        //PhaseConfigurator.SI.SetPhaseConfig();
     }
 
     void Update()

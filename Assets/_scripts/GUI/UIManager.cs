@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -95,8 +96,12 @@ public class UIManager : MonoBehaviour
 
     public void LoseLife()
     {
-        _lifesImages[_lifesImages.Count - 1].gameObject.SetActive(false);
-        _lifesImages.Remove(_lifesImages[_lifesImages.Count - 1]);
+        if (_lifesImages.Count > 0)
+        {
+            _lifesImages[_lifesImages.Count - 1].gameObject.SetActive(false);
+            _lifesImages.Remove(_lifesImages[_lifesImages.Count - 1]);
+
+        }
     }
 
     private void ActiveLifes()
@@ -108,14 +113,21 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void ResetGame()
+    public void ResetGame(bool escene)
     {
-        //SceneManager.LoadScene(0);
-        ActiveLifes();
-        _gameOver.SetActive(false);
-        GameManager.SI.ChangeGameState(GameState.InGame);
-        PlayerStats.SI.Respawn();
-        PatternManager.SI.remainingPattern = PhaseManager.SI.GetCurrentPhase();
+        if (escene)
+        {
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            ActiveLifes();
+            _gameOver.SetActive(false);
+            GameManager.SI.ChangeGameState(GameState.InGame);
+            PlayerStats.SI.Respawn();
+            PatternManager.SI.remainingPattern = PhaseManager.SI.GetCurrentPhase();
+        }
+
     }
 
     public void RefreshAttempts(int number)
@@ -126,6 +138,7 @@ public class UIManager : MonoBehaviour
     public void InitGame()
     {
         GameManager.SI.ChangeGameState(GameState.InGame);
+
     }
 
     public void InitGameDelayed(float time)

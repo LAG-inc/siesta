@@ -26,12 +26,19 @@ public class Meteorite : MonoBehaviour
 
         _animator.Rebind();
 
+        _target = GameObject.FindGameObjectWithTag("Player").transform.position;
+
         var vector = new Vector3(Mathf.Abs(_target.x - transform.position.x),
             Mathf.Abs(_target.y - transform.position.y));
 
-        _target = GameObject.FindGameObjectWithTag("Player").transform.position;
-
         transform.rotation = Quaternion.Euler(0, 0, Util.GetAngleFromVector(vector));
+
+        GetComponent<SpriteRenderer>().sortingLayerName = "Obstacles";
+
+        if (SFXManager.SI)
+        {
+            SFXManager.SI.PlaySound(Sound.MeteoritoTransicion);
+        }
     }
 
     private void FixedUpdate()
@@ -41,19 +48,22 @@ public class Meteorite : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, _target, velocity * Time.deltaTime);
 
         if (transform.position == _target) Boom();
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.gameObject.CompareTag("Player")) return;
         _target = other.transform.position;
+        GetComponent<SpriteRenderer>().sortingLayerName = "Player";
         Boom();
     }
 
 
     private void Boom()
     {
-        SFXManager.SI.PlaySound(Sound.Meteorite);
+        SFXManager.SI.StopSound(Sound.MeteoritoTransicion);
+        SFXManager.SI.PlaySound(Sound.MeteoritoExplosion);
         _collider.enabled = false;
         _animator.SetTrigger(AnimExplosion);
     }
