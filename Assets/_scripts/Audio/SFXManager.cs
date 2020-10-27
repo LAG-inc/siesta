@@ -6,7 +6,8 @@ public enum Sound
     Jump,
     ObjectHit,
     Checkpoint,
-    Meteorite,
+    MeteoritoExplosion,
+    MeteoritoTransicion,
     Fall,
     AlienComming,
     AlienExit,
@@ -23,7 +24,7 @@ public class SFXManager : MonoBehaviour
     }
 
     //Referencias a los audios source respectivos
-    [SerializeField] private AudioSource deslizar, salto, choqueObjeto, checkpoint, meteorito, caer, ovniLlegada, ovniSalida, ovniDetenido;
+    [SerializeField] private AudioSource deslizar, salto, choqueObjeto, checkpoint, meteoritoExplosion, meteoritoTransicion, caer, ovniLlegada, ovniSalida, ovniDetenido;
 
     public void PlaySound(Sound soundToPlay)
     {
@@ -44,8 +45,11 @@ public class SFXManager : MonoBehaviour
             case Sound.Checkpoint:
                 checkpoint.PlayOneShot(checkpoint.clip);
                 break;
-            case Sound.Meteorite:
-                if (!meteorito.isPlaying) meteorito.PlayOneShot(meteorito.clip);
+            case Sound.MeteoritoExplosion:
+                if (!meteoritoExplosion.isPlaying) meteoritoExplosion.PlayOneShot(meteoritoExplosion.clip);
+                break;
+            case Sound.MeteoritoTransicion:
+                meteoritoTransicion.Play();
                 break;
             case Sound.Fall:
                 caer.PlayOneShot(caer.clip);
@@ -59,6 +63,16 @@ public class SFXManager : MonoBehaviour
         }
     }
 
+    public void StopSound(Sound soundToPlay)
+    {
+        switch (soundToPlay)
+        {
+            case Sound.MeteoritoTransicion:
+                meteoritoTransicion.Stop();
+                break;
+            
+        }
+    }
     private void Update()
     {
         if (GameManager.SI.currentGameState != GameState.InGame) return;

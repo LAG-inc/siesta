@@ -42,12 +42,7 @@ public class AlienBehavior : MonoBehaviour
         _goOn = true;
         _initialPosition = transform.position;
         _currentShoots = 0;
-    }
-
-    private void Start()
-    {
-        SFXManager.SI.PlaySound(Sound.AlienComming);
-    }
+    }   
 
     private void FixedUpdate()
     {
@@ -70,7 +65,7 @@ public class AlienBehavior : MonoBehaviour
     }
 
     private IEnumerator AlienPatrol()
-    {
+    {       
         while (_currentShoots < shoots)
 
         {
@@ -117,7 +112,7 @@ public class AlienBehavior : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
-        SFXManager.SI.PlaySound(Sound.Meteorite);
+        SFXManager.SI.PlaySound(Sound.MeteoritoExplosion);
         attackPoint.Explosion();
         _cExplosion = null;
     }
@@ -137,6 +132,8 @@ public class AlienBehavior : MonoBehaviour
 
     private void OnEnable()
     {
+
         _cPatrol = _cPatrol == null ? StartCoroutine(AlienPatrol()) : _cPatrol;
+
     }
 }

@@ -63,6 +63,7 @@ public class PhaseConfigurator : MonoBehaviour
     private void SetAlienBehavior()
     {
         _alien.SetActive(phaseConfig[PhaseManager.SI.GetCurrentPhase()].alien);
+        SFXManager.SI.PlaySound(Sound.AlienComming);
         _alien.GetComponent<AlienBehavior>().currentType = phaseConfig[PhaseManager.SI.GetCurrentPhase()].alienType;
     }
 

@@ -43,11 +43,9 @@ public class PlayerStats : MonoBehaviour
 
         if (other.CompareTag("Obstacle")) SFXManager.SI.PlaySound(Sound.ObjectHit);
 
-        _currentLife--;
+        LoseLife();
 
         _currentInmTime = 0;
-
-        UIManager.SI.LoseLife();
 
         if (_currentLife > 0)
         {
@@ -68,5 +66,12 @@ public class PlayerStats : MonoBehaviour
     {
         _currentLife = initialLife;
         PlayerAnimation.SI.RestartValues();
+    }
+
+    public void LoseLife()
+    {
+        _currentLife--;
+        UIManager.SI.LoseLife();
+
     }
 }
