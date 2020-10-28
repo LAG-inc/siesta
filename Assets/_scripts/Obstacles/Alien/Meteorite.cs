@@ -41,6 +41,15 @@ public class Meteorite : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        // Evita que siga reproduciendo el sonido al recargar la escena.
+        // Por defecto el meteorito comienza activado, y reproduce el sonido
+        // en el Awake de PhaseConfigurator se desactiva, pero el sonido al ser
+        // independiente sigue reproduciendose.
+        SFXManager.SI.StopSound(Sound.MeteoritoTransicion);
+    }
+
     private void FixedUpdate()
     {
         if (GameManager.SI.currentGameState == GameState.MainMenu) return;

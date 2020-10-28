@@ -113,9 +113,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void ResetGame(bool escene)
+    public void ResetGame(bool scene)
     {
-        if (escene)
+        if (scene)
         {
             SceneManager.LoadScene(0);
         }
