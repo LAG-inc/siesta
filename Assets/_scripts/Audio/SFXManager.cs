@@ -70,7 +70,6 @@ public class SFXManager : MonoBehaviour
             case Sound.MeteoritoTransicion:
                 meteoritoTransicion.Stop();
                 break;
-            
         }
     }
     private void Update()
