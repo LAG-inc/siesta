@@ -20,15 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ccc7746-a459-45b8-9473-5aa82605e541" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siesta/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FinalScene/Pre-Final.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FinalScene/Pre-Final.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/FallingSlept.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/FallingSlept.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Managers/PatternManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Managers/PatternManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Managers/PhaseManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Managers/PhaseManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PhaseConfigurator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/PhaseConfigurator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/StartNapping.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/StartNapping.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_scripts/TheHellOfNap.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/TheHellOfNap.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FinalScene/Final.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FinalScene/Final.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Effects/ParallaxBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Effects/ParallaxBackground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AlienBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AlienBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PhasesScriptable/PhaseConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/PhasesScriptable/PhaseConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/PhasesScriptable/PhaseConfigurator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/PhasesScriptable/PhaseConfigurator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +39,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/f9/bfd9a43c/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65CAB14A-C59E-4552-B77F-98A4AED18F9E/45/fdf9f49b/BoxCollider2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AnimatorExplosionEnd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/LifeCounterHUD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/e7/b0c818a0/UnityAction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/1b/58c49dbb/WaitForEndOfFrame.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AnimatorExplosionEnd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65CAB14A-C59E-4552-B77F-98A4AED18F9E/09/891b6a7e/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/33/a35fa940/Int32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/049BE2AF-E36F-487E-B06E-F49D51A0BAB6/86/d43670d9/StateMachineBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2FEAF16E-8000-4E0C-ADAE-3F2E05F2A3FA/fe/ec31ebbf/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -67,14 +70,12 @@
         <option value="$PROJECT_DIR$/Assets/_scripts/Audio/SFXManager.cs" />
         <option value="$PROJECT_DIR$/Assets/LifeCounterHUD.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/GUI/UIManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/_scripts/Effects/ParallaxBackground.cs" />
         <option value="$PROJECT_DIR$/Assets/Sprites/LifeCounterHUD.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Effects/EffectBase.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/Meteorite.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Player/PlayerAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Player/PlayerStats.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Player/PlayerInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AlienBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/PhaseConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/EnemiesController.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Pattern.cs" />
@@ -84,6 +85,10 @@
         <option value="$PROJECT_DIR$/Assets/_scripts/Managers/PhaseManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/PhaseConfigurator.cs" />
         <option value="$PROJECT_DIR$/Assets/_scripts/Managers/PatternManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/PhasesScriptable/PhaseConfigurator.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/PhasesScriptable/PhaseConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Effects/ParallaxBackground.cs" />
+        <option value="$PROJECT_DIR$/Assets/_scripts/Obstacles/Alien/AlienBehavior.cs" />
       </list>
     </option>
   </component>
@@ -138,6 +143,7 @@
       <workItem from="1603309038919" duration="9761000" />
       <workItem from="1603325907068" duration="965000" />
       <workItem from="1603361963970" duration="9407000" />
+      <workItem from="1604165074643" duration="2139000" />
     </task>
     <servers />
   </component>
@@ -187,13 +193,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="630" y="138" width="660" height="804" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603258123062" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1603262058796">
+    <state x="616" y="250" key="run.anything.popup" timestamp="1604117730932">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603262058796" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603375111956">
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1604117730932" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1604111052635">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603375111956" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1604111052635" />
   </component>
 </project>
