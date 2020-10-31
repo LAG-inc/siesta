@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEditor.VersionControl;
+using UnityEngine;
 
 [DisallowMultipleComponent]
 public class ParallaxBackground : MonoBehaviour
@@ -10,6 +12,9 @@ public class ParallaxBackground : MonoBehaviour
 
     private float _sizeX;
     [SerializeField] private BoxCollider2D backgroundSprite;
+
+    [SerializeField] private float offssetCorrection;
+
     private Vector3 _initialPosition;
     private float _currentBackgroundVelocity;
 
@@ -17,8 +22,12 @@ public class ParallaxBackground : MonoBehaviour
     private void Awake()
     {
         _currentBackgroundVelocity = initialBackgroundVelocity;
-        _sizeX = backgroundSprite.size.x;
         _initialPosition = transform.position;
+
+        _sizeX = transform.GetChild(0).GetComponent<Renderer>().bounds.size.x;
+
+        if (transform.rotation.eulerAngles.z != 0)
+            _sizeX = -Mathf.Cos(transform.rotation.eulerAngles.z) * _sizeX;
     }
 
 
@@ -28,6 +37,9 @@ public class ParallaxBackground : MonoBehaviour
         if (GameManager.SI.currentGameState != GameState.InGame) return;
         transform.Translate(_currentBackgroundVelocity * Time.deltaTime, 0, 0);
         _currentBackgroundVelocity += Time.deltaTime / delayGrowSpeed;
-        transform.position = transform.position.x > _initialPosition.x + _sizeX ? _initialPosition : transform.position;
+        transform.position =
+            transform.position.x >= _initialPosition.x + _sizeX + offssetCorrection
+                ? _initialPosition
+                : transform.position;
     }
 }

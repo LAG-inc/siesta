@@ -9,6 +9,7 @@ TagManager:
   - SpawnPoint
   - Pattern
   - Meteorite
+  - background
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Obstacle
   - SpawnPoint
   - SpawnArea
-  - 
+  - background
   - 
   - 
   - 
@@ -57,4 +58,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1339157011
+    locked: 0
+  - name: Foreground
+    uniqueID: 2640411269
     locked: 0

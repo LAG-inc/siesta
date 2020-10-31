@@ -30,10 +30,6 @@ public class PhaseConfigurator : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-    }
-
 
     public void MeteoriteAttack()
     {
